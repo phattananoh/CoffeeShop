@@ -1,2 +1,2 @@
 # CoffeeShop
-Coffee Shop TeamProject
+Coffee Shop 
