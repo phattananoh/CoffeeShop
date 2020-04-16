@@ -1,0 +1,11 @@
+C:\Users\phatt\Desktop\StarBung\StarBung\StarBung\bin\Debug\StarBung.exe.config
+C:\Users\phatt\Desktop\StarBung\StarBung\StarBung\bin\Debug\StarBung.exe
+C:\Users\phatt\Desktop\StarBung\StarBung\StarBung\bin\Debug\StarBung.pdb
+C:\Users\phatt\Desktop\StarBung\StarBung\StarBung\bin\Debug\StarBung.xml
+C:\Users\phatt\Desktop\StarBung\StarBung\StarBung\obj\Debug\StarBung.vbprojAssemblyReference.cache
+C:\Users\phatt\Desktop\StarBung\StarBung\StarBung\obj\Debug\StarBung.FormLogin.resources
+C:\Users\phatt\Desktop\StarBung\StarBung\StarBung\obj\Debug\StarBung.Resources.resources
+C:\Users\phatt\Desktop\StarBung\StarBung\StarBung\obj\Debug\StarBung.vbproj.GenerateResource.cache
+C:\Users\phatt\Desktop\StarBung\StarBung\StarBung\obj\Debug\StarBung.exe
+C:\Users\phatt\Desktop\StarBung\StarBung\StarBung\obj\Debug\StarBung.xml
+C:\Users\phatt\Desktop\StarBung\StarBung\StarBung\obj\Debug\StarBung.pdb
