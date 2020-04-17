@@ -1,0 +1,12 @@
+D:\coffee\Coffee\Coffee\bin\Debug\Coffee.exe.config
+D:\coffee\Coffee\Coffee\bin\Debug\Coffee.exe
+D:\coffee\Coffee\Coffee\bin\Debug\Coffee.pdb
+D:\coffee\Coffee\Coffee\bin\Debug\Coffee.xml
+D:\coffee\Coffee\Coffee\obj\Debug\Coffee.vbprojAssemblyReference.cache
+D:\coffee\Coffee\Coffee\obj\Debug\Coffee.frm_login.resources
+D:\coffee\Coffee\Coffee\obj\Debug\Coffee.Resources.resources
+D:\coffee\Coffee\Coffee\obj\Debug\Coffee.vbproj.GenerateResource.cache
+D:\coffee\Coffee\Coffee\obj\Debug\Coffee.vbproj.CoreCompileInputs.cache
+D:\coffee\Coffee\Coffee\obj\Debug\Coffee.exe
+D:\coffee\Coffee\Coffee\obj\Debug\Coffee.xml
+D:\coffee\Coffee\Coffee\obj\Debug\Coffee.pdb
