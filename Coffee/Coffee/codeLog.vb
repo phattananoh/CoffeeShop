@@ -11,6 +11,8 @@ Module codeLog
 
     Friend sql As String
 
+    Friend DS As DataSet
+
 
     Friend Sub connect_open()
         If cn.State = ConnectionState.Closed Then cn.Open()
@@ -23,6 +25,15 @@ Module codeLog
         cmd = New SqlCommand(sql, cn)
         Return cmd.ExecuteScalar
 
+
+    End Function
+
+    Friend Function cmd_excuteDataTable()
+        connect_open()
+        DA = New SqlDataAdapter(sql, cn)
+        DS = New DataSet
+        DA.Fill(DS, "table")
+        Return DS.Tables("table")
 
     End Function
 

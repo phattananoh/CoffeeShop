@@ -28,6 +28,27 @@
 
         Else
             msg_ok("Login สำเร็จ")
+            frm_main.Show()
+            Me.Hide()
+
+            sql = "select * from usersLog where users_username='" & txt_username.Text & "'and users_password='" & txt_password.Text & "'"
+            Dim dts As DataTable = cmd_excuteDataTable()
+
+            With frm_main
+                .lbr_username.Text = dts.Rows(0)("users_username")
+                .lbr_fullname.Text = dts.Rows(0)("users_name") & " " & dts.Rows(0)("users_lastname")
+                .lbr_tel.Text = dts.Rows(0)("users_tel")
+                .lbr_email.Text = dts.Rows(0)("users_email")
+                .lbr_timelogin.Text = Date.Now
+
+
+
+            End With
+
+
+
+
+
         End If
 
 

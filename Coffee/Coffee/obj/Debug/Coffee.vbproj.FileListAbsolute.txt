@@ -10,3 +10,4 @@ D:\coffee\Coffee\Coffee\obj\Debug\Coffee.vbproj.CoreCompileInputs.cache
 D:\coffee\Coffee\Coffee\obj\Debug\Coffee.exe
 D:\coffee\Coffee\Coffee\obj\Debug\Coffee.xml
 D:\coffee\Coffee\Coffee\obj\Debug\Coffee.pdb
+D:\coffee\Coffee\Coffee\obj\Debug\Coffee.frm_main.resources

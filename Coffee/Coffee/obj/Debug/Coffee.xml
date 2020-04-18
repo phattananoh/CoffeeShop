@@ -27,12 +27,42 @@ Coffee
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Coffee.My.Resources.Resources.caffeine_close_up_coffee_coffee_cup_539432">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Coffee.My.Resources.Resources.caffeine1">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Coffee.My.Resources.Resources.coffee_beans_in_mug_1419931">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Coffee.My.Resources.Resources.ee">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Coffee.My.Resources.Resources.shallow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Coffee.My.Resources.Resources.top">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Coffee.My.Resources.Resources.Untitled_1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Coffee.My.Resources.Resources.vv">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
