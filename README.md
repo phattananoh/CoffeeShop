@@ -1,2 +1,3 @@
 # CoffeeShop
-Coffee Shop 
+Database Final! Project 
+CoffeShop Program + Sql
