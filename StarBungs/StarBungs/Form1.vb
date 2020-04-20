@@ -4,38 +4,55 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Try
-            connect_open()
-            MsgBox("Success")
-        Catch ex As Exception
-            MsgBox("Fail")
 
-        End Try
 
     End Sub
 
+
+
     Private Sub LoginButton_Click(sender As Object, e As EventArgs) Handles LoginButton.Click
         If txt_ID.Text = "" Or txt_Password.Text = "" Then
-            MsgBox("Plese Enter ID and Passwoed")
+            msg_error("Plese Enter ID and Passwoed")
             Return
         End If
 
-        sql = "select count(*) from users where staffID='" & txt_ID.Text & "'and staffPassword='" & txt_Password.Text & "'"
+        sql = "select count(*) from staffs where staffID='" & txt_ID.Text & "'and staffPassword='" & txt_Password.Text & "'"
         Dim count_staff As Integer = cmd_excuteScalar()
 
         If count_staff <= 0 Then
-            MsgBox("Fail to Login")
-        Else
-            MsgBox("Login Success")
+            msg_error("Fail to Login")
+            txt_ID.Text = ""
+            txt_Password.Text = ""
+            txt_ID.Select()
 
+        Else
+            msg_ok("Login Success")
+            starbungs_main.Show()
+            Me.Hide()
+
+            sql = "select * from staffs where staffID='" & txt_ID.Text & "'and staffPassword='" & txt_Password.Text & "'"
+            Dim dts As DataTable = cmd_excuteDataTable()
+
+            With starbungs_main
+                .lbl_Username.Text = dts.Rows(0)("staffID")
+                .lbl_Name.Text = dts.Rows(0)("staffName")
+                .lbl_Level.Text = dts.Rows(0)("staffLevel")
+                .lbl_Email.Text = dts.Rows(0)("staffEmail")
+
+            End With
 
         End If
 
+    End Sub
 
 
 
-
-
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+        If CheckBox1.Checked = True Then
+            txt_Password.PasswordChar = ""
+        Else
+            txt_Password.PasswordChar = "#"
+        End If
 
     End Sub
 End Class

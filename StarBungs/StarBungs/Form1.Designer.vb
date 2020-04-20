@@ -30,6 +30,7 @@ Partial Class Form1
         Me.txt_Password = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.LoginButton = New System.Windows.Forms.Button()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -73,10 +74,11 @@ Partial Class Form1
         '
         'txt_Password
         '
+        Me.txt_Password.Font = New System.Drawing.Font("Impact", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_Password.Location = New System.Drawing.Point(150, 345)
         Me.txt_Password.Name = "txt_Password"
         Me.txt_Password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(35)
-        Me.txt_Password.Size = New System.Drawing.Size(207, 22)
+        Me.txt_Password.Size = New System.Drawing.Size(207, 23)
         Me.txt_Password.TabIndex = 5
         '
         'Label3
@@ -93,19 +95,33 @@ Partial Class Form1
         'LoginButton
         '
         Me.LoginButton.Font = New System.Drawing.Font("Impact", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LoginButton.Location = New System.Drawing.Point(150, 408)
+        Me.LoginButton.Location = New System.Drawing.Point(150, 434)
         Me.LoginButton.Name = "LoginButton"
         Me.LoginButton.Size = New System.Drawing.Size(123, 48)
         Me.LoginButton.TabIndex = 6
         Me.LoginButton.Text = "Login"
         Me.LoginButton.UseVisualStyleBackColor = True
         '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Font = New System.Drawing.Font("Impact", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.CheckBox1.Location = New System.Drawing.Point(150, 385)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(118, 22)
+        Me.CheckBox1.TabIndex = 7
+        Me.CheckBox1.Text = "Show Password"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
+        Me.AcceptButton = Me.LoginButton
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(443, 536)
+        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.LoginButton)
         Me.Controls.Add(Me.txt_Password)
         Me.Controls.Add(Me.Label3)
@@ -128,4 +144,5 @@ Partial Class Form1
     Friend WithEvents txt_Password As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents LoginButton As Button
+    Friend WithEvents CheckBox1 As CheckBox
 End Class

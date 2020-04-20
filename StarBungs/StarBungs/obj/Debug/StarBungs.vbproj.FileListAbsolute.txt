@@ -9,3 +9,6 @@ C:\Users\phatt\Desktop\StarBung\StarBungs\StarBungs\obj\Debug\StarBungs.vbproj.G
 C:\Users\phatt\Desktop\StarBung\StarBungs\StarBungs\obj\Debug\StarBungs.exe
 C:\Users\phatt\Desktop\StarBung\StarBungs\StarBungs\obj\Debug\StarBungs.xml
 C:\Users\phatt\Desktop\StarBung\StarBungs\StarBungs\obj\Debug\StarBungs.pdb
+C:\Users\phatt\Desktop\StarBung\StarBungs\StarBungs\obj\Debug\StarBungs.vbproj.CoreCompileInputs.cache
+C:\Users\phatt\Desktop\StarBung\StarBungs\StarBungs\obj\Debug\StarBungs.starbungs_main.resources
+C:\Users\phatt\Desktop\StarBung\StarBungs\StarBungs\obj\Debug\StarBungs.manage_menu.resources
