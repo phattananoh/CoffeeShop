@@ -14,6 +14,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -24,6 +25,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>StarBungs.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,6 +36,7 @@
     <OutputPath>bin\Release\</OutputPath>
     <DocumentationFile>StarBungs.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>On</OptionExplicit>
@@ -74,6 +77,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="code.vb" />
+    <Compile Include="coffeesale.Designer.vb">
+      <DependentUpon>coffeesale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="coffeesale.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +90,13 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_selectprice.Designer.vb">
+      <DependentUpon>frm_selectprice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_selectprice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListView_Control.vb" />
     <Compile Include="manage_menu.Designer.vb">
       <DependentUpon>manage_menu.vb</DependentUpon>
     </Compile>
@@ -111,8 +127,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="coffeesale.resx">
+      <DependentUpon>coffeesale.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_selectprice.resx">
+      <DependentUpon>frm_selectprice.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="manage_menu.resx">
       <DependentUpon>manage_menu.vb</DependentUpon>
@@ -138,6 +160,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\default_coffee.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

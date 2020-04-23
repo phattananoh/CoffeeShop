@@ -43,6 +43,7 @@
             msg_ok("Complete")
             RefreshCoffee()
             Clear_from()
+            coffeesale.refresh_coffee()
 
         End If
     End Sub
@@ -66,6 +67,7 @@
             If Not IsNumeric(txt_AddHot.Text) Or Not IsNumeric(txt_AddIced.Text) Or Not IsNumeric(txt_AddFrappe.Text) Then
                 msg_error("Please fill Price in Number")
                 Return
+                coffeesale.refresh_coffee()
             End If
 
 
@@ -118,6 +120,10 @@
             txt_confirm.Text = ""
             txt_confirm.Select()
             Return
+
+
+
+
         End If
 
         Dim select_id As Integer = DataGridCoffee.CurrentRow.Index
@@ -130,6 +136,7 @@
             msg_ok("Remove complete")
             txt_confirm.Text = ""
             RefreshCoffee()
+            coffeesale.refresh_coffee()
 
         End If
     End Sub

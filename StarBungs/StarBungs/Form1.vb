@@ -55,4 +55,8 @@
         End If
 
     End Sub
+
+    Private Sub txt_ID_TextChanged(sender As Object, e As EventArgs) Handles txt_ID.TextChanged
+
+    End Sub
 End Class

@@ -1,9 +1,12 @@
 ﻿Imports System.Data.Sql
 Imports System.Data.SqlClient
 
+
+
 Module codeLog
 
-    Friend cn As New SqlConnection("Data Source=PHATTANAN;Initial Catalog=starbungs;Integrated Security=True")
+
+    Friend cn As New SqlConnection("Data Source=.\SQLEXPRESS; Initial Catalog=starbungs; Integrated Security=SSPI;")
 
     Friend cmd As New SqlCommand
 
@@ -28,6 +31,7 @@ Module codeLog
 
     Friend Sub connect_open()
         If cn.State = ConnectionState.Closed Then cn.Open()
+
 
     End Sub
 
