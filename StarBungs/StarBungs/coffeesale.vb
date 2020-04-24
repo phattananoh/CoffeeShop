@@ -1,6 +1,25 @@
 ﻿Public Class coffeesale
     Private Sub coffeesale_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         refresh_coffee()
+        generate_saleID()
+        get_datenow()
+    End Sub
+
+
+    Public Sub generate_saleID()
+        Try
+            sql = "select max(saleID) from sales"
+            Dim i As Integer = cmd_excuteScalar() + 1
+            lbl_saleID.Text = "SB-" & Date.Now.Year + 543 & "/" & i.ToString.PadLeft(5, "0")
+        Catch ex As Exception
+            lbl_saleID.Text = "SB-" & Date.Now.Year + 543 & "/00001"
+
+        End Try
+
+    End Sub
+
+    Public Sub get_datenow()
+        lbl_date_sale.Text = Date.Today
     End Sub
 
     Public Sub total_price()
@@ -77,7 +96,7 @@
         arr(0) = ListView1.Items.Count + 1
         arr(1) = dts.Rows(0)("coffeeID")
         arr(2) = dts.Rows(0)("coffeeName")
-        arr(3) = "แก้ว"
+        arr(3) = "Cup"
         arr(4) = txt_coffee_amount.Text
 
         Dim price As Integer = 0
@@ -86,9 +105,9 @@
         If rad_frappe.Checked = True Then price = dts.Rows(0)("coffeeFrappe")
 
         Dim type_coffee As String = ""
-        If rad_hot.Checked = True Then type_coffee = "ร้อน"
-        If rad_iced.Checked = True Then type_coffee = "เย็น"
-        If rad_frappe.Checked = True Then type_coffee = "ปั่น"
+        If rad_hot.Checked = True Then type_coffee = "Hot"
+        If rad_iced.Checked = True Then type_coffee = "Iced"
+        If rad_frappe.Checked = True Then type_coffee = "Frappe"
 
         arr(3) &= "/" & type_coffee
 
@@ -104,7 +123,7 @@
         sql = "select * from coffee where coffeeID='" & txt_coffee_id.Text & "'"
         Dim i As Integer = cmd_excuteScalar()
         If i <= 0 And txt_coffee_id.Text <> "" Then
-            msg_error("ไม่พบรหัสกาแฟนี้ กรุณาแก้ไขหรือว่างไว้")
+            msg_error("Invalid Coffee ID")
         End If
     End Sub
 
@@ -113,15 +132,45 @@
     End Sub
 
     Private Sub btn_del_all_Click(sender As Object, e As EventArgs) Handles btn_del_all.Click
-        If confirm("ต้องการยกเลิกหรือไม่ ?") = vbNo Then Return
+        If confirm("Are you sure you want to cancle ?") = vbNo Then Return
         ListView1.Items.Clear()
         txt_total.Text = "0.00"
     End Sub
 
     Private Sub btn_del_Click(sender As Object, e As EventArgs) Handles btn_del.Click
-        If confirm("คุณต้องการจะลบรายการนี้หรือไม่ ?") = vbYes Then
+        If confirm("You want to remove ?") = vbYes Then
             ListView1.Items.Remove(ListView1.FocusedItem)
             total_price()
         End If
+    End Sub
+
+    Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView1.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub btn_purchase_Click(sender As Object, e As EventArgs) Handles btn_purchase.Click
+        With frm_total
+            .txt_total.Text = txt_total.Text
+            .txt_discount.Text = lbl_discount.Text
+            .txt_total2.Text = .txt_total.Text - .txt_discount.Text
+            .txt_receive.Text = ""
+            .txt_receive.Select()
+            .Show()
+            .Activate()
+
+        End With
+    End Sub
+
+    Private Sub lbl_saleID_Click(sender As Object, e As EventArgs) Handles lbl_saleID.Click
+
+    End Sub
+
+    Private Sub btn_promotion_Click(sender As Object, e As EventArgs) Handles btn_promotion.Click
+        With promotion
+            .Show()
+            .Activate()
+            .txt_code.Select()
+
+        End With
     End Sub
 End Class

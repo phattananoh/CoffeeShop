@@ -43,7 +43,7 @@ Partial Class coffeesale
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.btn_del = New System.Windows.Forms.Button()
         Me.btn_del_all = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btn_purchase = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txt_coffee_id = New System.Windows.Forms.TextBox()
@@ -53,6 +53,13 @@ Partial Class coffeesale
         Me.rad_hot = New System.Windows.Forms.RadioButton()
         Me.rad_frappe = New System.Windows.Forms.RadioButton()
         Me.rad_iced = New System.Windows.Forms.RadioButton()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lbl_saleID = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lbl_date_sale = New System.Windows.Forms.Label()
+        Me.btn_promotion = New System.Windows.Forms.Button()
+        Me.Discount = New System.Windows.Forms.Label()
+        Me.lbl_discount = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -63,6 +70,7 @@ Partial Class coffeesale
         '
         'Panel1
         '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Panel1.Controls.Add(Me.ListView2)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
@@ -100,11 +108,13 @@ Partial Class coffeesale
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Impact", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(21, 15)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(40, 17)
+        Me.Label1.Size = New System.Drawing.Size(48, 18)
         Me.Label1.TabIndex = 4
-        Me.Label1.Text = "ค้นหา"
+        Me.Label1.Text = "Search"
         '
         'txt_search
         '
@@ -124,11 +134,13 @@ Partial Class coffeesale
         '
         'txt_total
         '
+        Me.txt_total.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.txt_total.Dock = System.Windows.Forms.DockStyle.Top
-        Me.txt_total.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.txt_total.Font = New System.Drawing.Font("Impact", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_total.ForeColor = System.Drawing.Color.White
         Me.txt_total.Location = New System.Drawing.Point(0, 0)
         Me.txt_total.Name = "txt_total"
-        Me.txt_total.Size = New System.Drawing.Size(617, 98)
+        Me.txt_total.Size = New System.Drawing.Size(617, 105)
         Me.txt_total.TabIndex = 0
         Me.txt_total.Text = "0.00"
         Me.txt_total.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -152,9 +164,9 @@ Partial Class coffeesale
         Me.ListView1.GridLines = True
         Me.ListView1.HideSelection = False
         Me.ListView1.LargeImageList = Me.ImageList1
-        Me.ListView1.Location = New System.Drawing.Point(0, 48)
+        Me.ListView1.Location = New System.Drawing.Point(0, 97)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(617, 270)
+        Me.ListView1.Size = New System.Drawing.Size(617, 221)
         Me.ListView1.TabIndex = 2
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -165,38 +177,39 @@ Partial Class coffeesale
         '
         'ColumnHeader2
         '
-        Me.ColumnHeader2.Text = "รหัส"
+        Me.ColumnHeader2.Text = "ID"
         Me.ColumnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'ColumnHeader3
         '
-        Me.ColumnHeader3.Text = "รายการ"
+        Me.ColumnHeader3.Text = "Menu"
         Me.ColumnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'ColumnHeader4
         '
-        Me.ColumnHeader4.Text = "หน่วย"
+        Me.ColumnHeader4.Text = "Unit"
         Me.ColumnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'ColumnHeader5
         '
-        Me.ColumnHeader5.Text = "จำนวน"
+        Me.ColumnHeader5.Text = "Quantity"
         Me.ColumnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'ColumnHeader6
         '
-        Me.ColumnHeader6.Text = "ราคา"
+        Me.ColumnHeader6.Text = "Price"
         Me.ColumnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'ColumnHeader7
         '
-        Me.ColumnHeader7.Text = "ราคารวม"
+        Me.ColumnHeader7.Text = "Total"
         '
         'Panel6
         '
+        Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Panel6.Controls.Add(Me.btn_del)
         Me.Panel6.Controls.Add(Me.btn_del_all)
-        Me.Panel6.Controls.Add(Me.Button4)
+        Me.Panel6.Controls.Add(Me.btn_purchase)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel6.Location = New System.Drawing.Point(0, 318)
         Me.Panel6.Name = "Panel6"
@@ -205,33 +218,50 @@ Partial Class coffeesale
         '
         'btn_del
         '
+        Me.btn_del.BackColor = System.Drawing.Color.White
+        Me.btn_del.Font = New System.Drawing.Font("Impact", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_del.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn_del.Location = New System.Drawing.Point(12, 6)
         Me.btn_del.Name = "btn_del"
-        Me.btn_del.Size = New System.Drawing.Size(75, 32)
+        Me.btn_del.Size = New System.Drawing.Size(99, 32)
         Me.btn_del.TabIndex = 11
-        Me.btn_del.Text = "ลบที่เลือก"
-        Me.btn_del.UseVisualStyleBackColor = True
+        Me.btn_del.Text = "Delete"
+        Me.btn_del.UseVisualStyleBackColor = False
         '
         'btn_del_all
         '
-        Me.btn_del_all.Location = New System.Drawing.Point(117, 6)
+        Me.btn_del_all.BackColor = System.Drawing.Color.White
+        Me.btn_del_all.Font = New System.Drawing.Font("Impact", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_del_all.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btn_del_all.Location = New System.Drawing.Point(147, 6)
         Me.btn_del_all.Name = "btn_del_all"
-        Me.btn_del_all.Size = New System.Drawing.Size(73, 32)
+        Me.btn_del_all.Size = New System.Drawing.Size(99, 32)
         Me.btn_del_all.TabIndex = 12
-        Me.btn_del_all.Text = "ลบทั้งหมด"
-        Me.btn_del_all.UseVisualStyleBackColor = True
+        Me.btn_del_all.Text = "Delete All"
+        Me.btn_del_all.UseVisualStyleBackColor = False
         '
-        'Button4
+        'btn_purchase
         '
-        Me.Button4.Location = New System.Drawing.Point(539, 6)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 32)
-        Me.Button4.TabIndex = 13
-        Me.Button4.Text = "คิดเงิน"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btn_purchase.BackColor = System.Drawing.Color.White
+        Me.btn_purchase.Font = New System.Drawing.Font("Impact", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_purchase.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btn_purchase.Location = New System.Drawing.Point(522, 6)
+        Me.btn_purchase.Name = "btn_purchase"
+        Me.btn_purchase.Size = New System.Drawing.Size(92, 32)
+        Me.btn_purchase.TabIndex = 13
+        Me.btn_purchase.Text = "Purchase "
+        Me.btn_purchase.UseVisualStyleBackColor = False
         '
         'Panel5
         '
+        Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Panel5.Controls.Add(Me.btn_promotion)
+        Me.Panel5.Controls.Add(Me.lbl_discount)
+        Me.Panel5.Controls.Add(Me.Discount)
+        Me.Panel5.Controls.Add(Me.lbl_date_sale)
+        Me.Panel5.Controls.Add(Me.Label6)
+        Me.Panel5.Controls.Add(Me.lbl_saleID)
+        Me.Panel5.Controls.Add(Me.Label4)
         Me.Panel5.Controls.Add(Me.Label2)
         Me.Panel5.Controls.Add(Me.txt_coffee_id)
         Me.Panel5.Controls.Add(Me.Label3)
@@ -241,23 +271,24 @@ Partial Class coffeesale
         Me.Panel5.Controls.Add(Me.rad_frappe)
         Me.Panel5.Controls.Add(Me.rad_iced)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel5.ForeColor = System.Drawing.Color.White
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(617, 48)
+        Me.Panel5.Size = New System.Drawing.Size(617, 97)
         Me.Panel5.TabIndex = 14
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(21, 14)
+        Me.Label2.Location = New System.Drawing.Point(19, 42)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(61, 17)
+        Me.Label2.Size = New System.Drawing.Size(66, 17)
         Me.Label2.TabIndex = 5
-        Me.Label2.Text = "รหัสสินค้า"
+        Me.Label2.Text = "Coffee ID"
         '
         'txt_coffee_id
         '
-        Me.txt_coffee_id.Location = New System.Drawing.Point(97, 11)
+        Me.txt_coffee_id.Location = New System.Drawing.Point(95, 39)
         Me.txt_coffee_id.Name = "txt_coffee_id"
         Me.txt_coffee_id.Size = New System.Drawing.Size(64, 22)
         Me.txt_coffee_id.TabIndex = 1
@@ -265,59 +296,130 @@ Partial Class coffeesale
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(184, 14)
+        Me.Label3.Location = New System.Drawing.Point(182, 42)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(46, 17)
+        Me.Label3.Size = New System.Drawing.Size(61, 17)
         Me.Label3.TabIndex = 6
-        Me.Label3.Text = "จำนวน"
+        Me.Label3.Text = "Quantity"
         '
         'txt_coffee_amount
         '
-        Me.txt_coffee_amount.Location = New System.Drawing.Point(246, 11)
+        Me.txt_coffee_amount.Location = New System.Drawing.Point(244, 39)
         Me.txt_coffee_amount.Name = "txt_coffee_amount"
         Me.txt_coffee_amount.Size = New System.Drawing.Size(64, 22)
         Me.txt_coffee_amount.TabIndex = 2
         '
         'btn_add
         '
-        Me.btn_add.Location = New System.Drawing.Point(536, 11)
+        Me.btn_add.BackColor = System.Drawing.Color.White
+        Me.btn_add.Font = New System.Drawing.Font("Impact", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_add.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btn_add.Location = New System.Drawing.Point(536, 34)
         Me.btn_add.Name = "btn_add"
-        Me.btn_add.Size = New System.Drawing.Size(75, 23)
+        Me.btn_add.Size = New System.Drawing.Size(75, 31)
         Me.btn_add.TabIndex = 10
-        Me.btn_add.Text = "เพิ่ม"
-        Me.btn_add.UseVisualStyleBackColor = True
+        Me.btn_add.Text = "Add"
+        Me.btn_add.UseVisualStyleBackColor = False
         '
         'rad_hot
         '
         Me.rad_hot.AutoSize = True
         Me.rad_hot.Checked = True
-        Me.rad_hot.Location = New System.Drawing.Point(333, 12)
+        Me.rad_hot.Location = New System.Drawing.Point(331, 40)
         Me.rad_hot.Name = "rad_hot"
-        Me.rad_hot.Size = New System.Drawing.Size(52, 21)
+        Me.rad_hot.Size = New System.Drawing.Size(51, 21)
         Me.rad_hot.TabIndex = 7
         Me.rad_hot.TabStop = True
-        Me.rad_hot.Text = "ร้อน"
+        Me.rad_hot.Text = "Hot"
         Me.rad_hot.UseVisualStyleBackColor = True
         '
         'rad_frappe
         '
         Me.rad_frappe.AutoSize = True
-        Me.rad_frappe.Location = New System.Drawing.Point(468, 12)
+        Me.rad_frappe.Location = New System.Drawing.Point(466, 40)
         Me.rad_frappe.Name = "rad_frappe"
-        Me.rad_frappe.Size = New System.Drawing.Size(46, 21)
+        Me.rad_frappe.Size = New System.Drawing.Size(74, 21)
         Me.rad_frappe.TabIndex = 9
-        Me.rad_frappe.Text = "ปั่น"
+        Me.rad_frappe.Text = "Frappe"
         Me.rad_frappe.UseVisualStyleBackColor = True
         '
         'rad_iced
         '
         Me.rad_iced.AutoSize = True
-        Me.rad_iced.Location = New System.Drawing.Point(400, 12)
+        Me.rad_iced.Location = New System.Drawing.Point(398, 40)
         Me.rad_iced.Name = "rad_iced"
-        Me.rad_iced.Size = New System.Drawing.Size(49, 21)
+        Me.rad_iced.Size = New System.Drawing.Size(55, 21)
         Me.rad_iced.TabIndex = 8
-        Me.rad_iced.Text = "เย็น"
+        Me.rad_iced.Text = "Iced"
         Me.rad_iced.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(19, 70)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(61, 17)
+        Me.Label4.TabIndex = 11
+        Me.Label4.Text = "Sale ID :"
+        '
+        'lbl_saleID
+        '
+        Me.lbl_saleID.AutoSize = True
+        Me.lbl_saleID.Location = New System.Drawing.Point(92, 70)
+        Me.lbl_saleID.Name = "lbl_saleID"
+        Me.lbl_saleID.Size = New System.Drawing.Size(26, 17)
+        Me.lbl_saleID.TabIndex = 12
+        Me.lbl_saleID.Text = "xxx"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(231, 70)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(50, 17)
+        Me.Label6.TabIndex = 13
+        Me.Label6.Text = "Date : "
+        '
+        'lbl_date_sale
+        '
+        Me.lbl_date_sale.AutoSize = True
+        Me.lbl_date_sale.Location = New System.Drawing.Point(301, 70)
+        Me.lbl_date_sale.Name = "lbl_date_sale"
+        Me.lbl_date_sale.Size = New System.Drawing.Size(26, 17)
+        Me.lbl_date_sale.TabIndex = 14
+        Me.lbl_date_sale.Text = "xxx"
+        '
+        'btn_promotion
+        '
+        Me.btn_promotion.BackColor = System.Drawing.Color.White
+        Me.btn_promotion.Font = New System.Drawing.Font("Impact", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_promotion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btn_promotion.Location = New System.Drawing.Point(370, 2)
+        Me.btn_promotion.Name = "btn_promotion"
+        Me.btn_promotion.Size = New System.Drawing.Size(92, 32)
+        Me.btn_promotion.TabIndex = 14
+        Me.btn_promotion.Text = "Promotion"
+        Me.btn_promotion.UseVisualStyleBackColor = False
+        '
+        'Discount
+        '
+        Me.Discount.AutoSize = True
+        Me.Discount.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Discount.Location = New System.Drawing.Point(468, 6)
+        Me.Discount.Name = "Discount"
+        Me.Discount.Size = New System.Drawing.Size(91, 25)
+        Me.Discount.TabIndex = 15
+        Me.Discount.Text = "Discount :"
+        '
+        'lbl_discount
+        '
+        Me.lbl_discount.AutoSize = True
+        Me.lbl_discount.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_discount.Location = New System.Drawing.Point(565, 6)
+        Me.lbl_discount.Name = "lbl_discount"
+        Me.lbl_discount.Size = New System.Drawing.Size(23, 25)
+        Me.lbl_discount.TabIndex = 16
+        Me.lbl_discount.Text = "0"
         '
         'coffeesale
         '
@@ -350,7 +452,7 @@ Partial Class coffeesale
     Friend WithEvents Label1 As Label
     Friend WithEvents txt_search As TextBox
     Friend WithEvents txt_total As TextBox
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btn_purchase As Button
     Friend WithEvents btn_del_all As Button
     Friend WithEvents btn_del As Button
     Friend WithEvents btn_add As Button
@@ -372,4 +474,11 @@ Partial Class coffeesale
     Friend WithEvents ColumnHeader5 As ColumnHeader
     Friend WithEvents ColumnHeader6 As ColumnHeader
     Friend WithEvents ColumnHeader7 As ColumnHeader
+    Friend WithEvents lbl_date_sale As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents lbl_saleID As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents btn_promotion As Button
+    Friend WithEvents lbl_discount As Label
+    Friend WithEvents Discount As Label
 End Class

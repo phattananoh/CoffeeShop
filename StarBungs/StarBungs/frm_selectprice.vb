@@ -4,7 +4,7 @@
     Private Sub btn_select_Click(sender As Object, e As EventArgs) Handles btn_select.Click
 
         If txt_amount.Text = "" Or Not IsNumeric(txt_amount.Text) Then
-            msg_error("กรุณากรอกจำนวน")
+            msg_error("Please enter quantity")
             Return
         End If
 
@@ -13,7 +13,7 @@
             array_item(0) = .ListView1.Items.Count + 1
             array_item(1) = lbl_coffeeID.Text
             array_item(2) = lbl_coffeeName.Text
-            array_item(3) = "แก้ว"
+            array_item(3) = "Cup"
             array_item(4) = txt_amount.Text
             Dim price As Integer = 0
             If rad_hot.Checked = True Then
@@ -46,5 +46,9 @@
 
     Private Sub rad_frappe_CheckedChanged(sender As Object, e As EventArgs) Handles rad_frappe.CheckedChanged
         txt_amount.Select()
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
     End Sub
 End Class

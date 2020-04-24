@@ -6,7 +6,7 @@ Imports System.Data.SqlClient
 Module codeLog
 
 
-    Friend cn As New SqlConnection("Data Source=.\SQLEXPRESS; Initial Catalog=starbungs; Integrated Security=SSPI;")
+    Friend cn As New SqlConnection("Data Source=PHATTANAN;Initial Catalog=starbungs;Integrated Security=True")
 
     Friend cmd As New SqlCommand
 

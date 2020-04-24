@@ -6,8 +6,8 @@
         End Sub
 
         Private Sub ToolStripButton6_Click(sender As Object, e As EventArgs) Handles ToolStripButton6.Click
-            If confirm("Are you sure you want yo Logout") = vbNo Then Return
-            Me.Close()
+        If confirm("Are you sure you want to Logout") = vbNo Then Return
+        Me.Close()
             Form1.Show()
             With Form1
                 .txt_Password.Text = ""
@@ -31,4 +31,10 @@
         coffeesale.MdiParent = Me
 
     End Sub
-    End Class
+
+    Private Sub ToolStripButton2_Click(sender As Object, e As EventArgs) Handles ToolStripButton2.Click
+        manage_promotion.Show()
+        manage_promotion.MdiParent = Me
+
+    End Sub
+End Class

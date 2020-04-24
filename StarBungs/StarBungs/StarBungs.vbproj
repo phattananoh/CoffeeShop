@@ -96,11 +96,23 @@
     <Compile Include="frm_selectprice.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_total.Designer.vb">
+      <DependentUpon>frm_total.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_total.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ListView_Control.vb" />
     <Compile Include="manage_menu.Designer.vb">
       <DependentUpon>manage_menu.vb</DependentUpon>
     </Compile>
     <Compile Include="manage_menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manage_promotion.Designer.vb">
+      <DependentUpon>manage_promotion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manage_promotion.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -119,6 +131,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="promotion.Designer.vb">
+      <DependentUpon>promotion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="promotion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="starbungs_main.Designer.vb">
       <DependentUpon>starbungs_main.vb</DependentUpon>
     </Compile>
@@ -136,14 +154,23 @@
     <EmbeddedResource Include="frm_selectprice.resx">
       <DependentUpon>frm_selectprice.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_total.resx">
+      <DependentUpon>frm_total.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="manage_menu.resx">
       <DependentUpon>manage_menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manage_promotion.resx">
+      <DependentUpon>manage_promotion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="promotion.resx">
+      <DependentUpon>promotion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="starbungs_main.resx">
       <DependentUpon>starbungs_main.vb</DependentUpon>
