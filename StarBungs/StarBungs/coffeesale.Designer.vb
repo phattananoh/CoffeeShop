@@ -24,6 +24,16 @@ Partial Class coffeesale
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.btn_customer_clear = New System.Windows.Forms.LinkLabel()
+        Me.link_select_customer = New System.Windows.Forms.LinkLabel()
+        Me.lbl_point = New System.Windows.Forms.Label()
+        Me.lbl_name = New System.Windows.Forms.Label()
+        Me.lbl_username = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ListView2 = New System.Windows.Forms.ListView()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -45,6 +55,13 @@ Partial Class coffeesale
         Me.btn_del_all = New System.Windows.Forms.Button()
         Me.btn_purchase = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.btn_promotion = New System.Windows.Forms.Button()
+        Me.lbl_discount = New System.Windows.Forms.Label()
+        Me.Discount = New System.Windows.Forms.Label()
+        Me.lbl_date_sale = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lbl_saleID = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txt_coffee_id = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -53,14 +70,9 @@ Partial Class coffeesale
         Me.rad_hot = New System.Windows.Forms.RadioButton()
         Me.rad_frappe = New System.Windows.Forms.RadioButton()
         Me.rad_iced = New System.Windows.Forms.RadioButton()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.lbl_saleID = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.lbl_date_sale = New System.Windows.Forms.Label()
-        Me.btn_promotion = New System.Windows.Forms.Button()
-        Me.Discount = New System.Windows.Forms.Label()
-        Me.lbl_discount = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
+        Me.Panel7.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -71,13 +83,123 @@ Partial Class coffeesale
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Panel7)
         Me.Panel1.Controls.Add(Me.ListView2)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel1.Location = New System.Drawing.Point(617, 0)
+        Me.Panel1.Location = New System.Drawing.Point(642, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(200, 466)
+        Me.Panel1.Size = New System.Drawing.Size(308, 536)
         Me.Panel1.TabIndex = 0
+        '
+        'Panel7
+        '
+        Me.Panel7.Controls.Add(Me.btn_customer_clear)
+        Me.Panel7.Controls.Add(Me.link_select_customer)
+        Me.Panel7.Controls.Add(Me.lbl_point)
+        Me.Panel7.Controls.Add(Me.lbl_name)
+        Me.Panel7.Controls.Add(Me.lbl_username)
+        Me.Panel7.Controls.Add(Me.Label8)
+        Me.Panel7.Controls.Add(Me.Label7)
+        Me.Panel7.Controls.Add(Me.Label5)
+        Me.Panel7.Controls.Add(Me.PictureBox1)
+        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel7.Location = New System.Drawing.Point(0, 430)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(308, 106)
+        Me.Panel7.TabIndex = 2
+        '
+        'btn_customer_clear
+        '
+        Me.btn_customer_clear.AutoSize = True
+        Me.btn_customer_clear.LinkColor = System.Drawing.Color.Yellow
+        Me.btn_customer_clear.Location = New System.Drawing.Point(136, 80)
+        Me.btn_customer_clear.Name = "btn_customer_clear"
+        Me.btn_customer_clear.Size = New System.Drawing.Size(41, 17)
+        Me.btn_customer_clear.TabIndex = 8
+        Me.btn_customer_clear.TabStop = True
+        Me.btn_customer_clear.Text = "Clear"
+        '
+        'link_select_customer
+        '
+        Me.link_select_customer.AutoSize = True
+        Me.link_select_customer.LinkColor = System.Drawing.Color.Yellow
+        Me.link_select_customer.Location = New System.Drawing.Point(60, 79)
+        Me.link_select_customer.Name = "link_select_customer"
+        Me.link_select_customer.Size = New System.Drawing.Size(47, 17)
+        Me.link_select_customer.TabIndex = 7
+        Me.link_select_customer.TabStop = True
+        Me.link_select_customer.Text = "Select"
+        '
+        'lbl_point
+        '
+        Me.lbl_point.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl_point.ForeColor = System.Drawing.Color.White
+        Me.lbl_point.Location = New System.Drawing.Point(139, 52)
+        Me.lbl_point.Name = "lbl_point"
+        Me.lbl_point.Size = New System.Drawing.Size(40, 17)
+        Me.lbl_point.TabIndex = 6
+        Me.lbl_point.Text = "0"
+        '
+        'lbl_name
+        '
+        Me.lbl_name.AutoSize = True
+        Me.lbl_name.ForeColor = System.Drawing.Color.White
+        Me.lbl_name.Location = New System.Drawing.Point(139, 29)
+        Me.lbl_name.Name = "lbl_name"
+        Me.lbl_name.Size = New System.Drawing.Size(20, 17)
+        Me.lbl_name.TabIndex = 5
+        Me.lbl_name.Text = "..."
+        '
+        'lbl_username
+        '
+        Me.lbl_username.AutoSize = True
+        Me.lbl_username.ForeColor = System.Drawing.Color.White
+        Me.lbl_username.Location = New System.Drawing.Point(139, 7)
+        Me.lbl_username.Name = "lbl_username"
+        Me.lbl_username.Size = New System.Drawing.Size(20, 17)
+        Me.lbl_username.TabIndex = 4
+        Me.lbl_username.Text = "..."
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(60, 52)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(40, 17)
+        Me.Label8.TabIndex = 3
+        Me.Label8.Text = "Point"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(60, 29)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(45, 17)
+        Me.Label7.TabIndex = 2
+        Me.Label7.Text = "Name"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(60, 7)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(73, 17)
+        Me.Label5.TabIndex = 1
+        Me.Label5.Text = "Username"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.StarBungs.My.Resources.Resources._5555
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 7)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(48, 62)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'ListView2
         '
@@ -85,7 +207,7 @@ Partial Class coffeesale
         Me.ListView2.LargeImageList = Me.ImageList1
         Me.ListView2.Location = New System.Drawing.Point(6, 55)
         Me.ListView2.Name = "ListView2"
-        Me.ListView2.Size = New System.Drawing.Size(191, 363)
+        Me.ListView2.Size = New System.Drawing.Size(299, 369)
         Me.ListView2.TabIndex = 1
         Me.ListView2.UseCompatibleStateImageBehavior = False
         '
@@ -102,7 +224,7 @@ Partial Class coffeesale
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(200, 49)
+        Me.Panel2.Size = New System.Drawing.Size(308, 49)
         Me.Panel2.TabIndex = 1
         '
         'Label1
@@ -120,7 +242,7 @@ Partial Class coffeesale
         '
         Me.txt_search.Location = New System.Drawing.Point(88, 12)
         Me.txt_search.Name = "txt_search"
-        Me.txt_search.Size = New System.Drawing.Size(100, 22)
+        Me.txt_search.Size = New System.Drawing.Size(169, 22)
         Me.txt_search.TabIndex = 3
         '
         'Panel3
@@ -129,7 +251,7 @@ Partial Class coffeesale
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(617, 100)
+        Me.Panel3.Size = New System.Drawing.Size(642, 100)
         Me.Panel3.TabIndex = 1
         '
         'txt_total
@@ -140,7 +262,7 @@ Partial Class coffeesale
         Me.txt_total.ForeColor = System.Drawing.Color.White
         Me.txt_total.Location = New System.Drawing.Point(0, 0)
         Me.txt_total.Name = "txt_total"
-        Me.txt_total.Size = New System.Drawing.Size(617, 105)
+        Me.txt_total.Size = New System.Drawing.Size(642, 105)
         Me.txt_total.TabIndex = 0
         Me.txt_total.Text = "0.00"
         Me.txt_total.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -153,7 +275,7 @@ Partial Class coffeesale
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel4.Location = New System.Drawing.Point(0, 100)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(617, 366)
+        Me.Panel4.Size = New System.Drawing.Size(642, 436)
         Me.Panel4.TabIndex = 1
         '
         'ListView1
@@ -166,7 +288,7 @@ Partial Class coffeesale
         Me.ListView1.LargeImageList = Me.ImageList1
         Me.ListView1.Location = New System.Drawing.Point(0, 97)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(617, 221)
+        Me.ListView1.Size = New System.Drawing.Size(642, 291)
         Me.ListView1.TabIndex = 2
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -211,9 +333,9 @@ Partial Class coffeesale
         Me.Panel6.Controls.Add(Me.btn_del_all)
         Me.Panel6.Controls.Add(Me.btn_purchase)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel6.Location = New System.Drawing.Point(0, 318)
+        Me.Panel6.Location = New System.Drawing.Point(0, 388)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(617, 48)
+        Me.Panel6.Size = New System.Drawing.Size(642, 48)
         Me.Panel6.TabIndex = 15
         '
         'btn_del
@@ -274,8 +396,76 @@ Partial Class coffeesale
         Me.Panel5.ForeColor = System.Drawing.Color.White
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(617, 97)
+        Me.Panel5.Size = New System.Drawing.Size(642, 97)
         Me.Panel5.TabIndex = 14
+        '
+        'btn_promotion
+        '
+        Me.btn_promotion.BackColor = System.Drawing.Color.White
+        Me.btn_promotion.Font = New System.Drawing.Font("Impact", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_promotion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btn_promotion.Location = New System.Drawing.Point(370, 2)
+        Me.btn_promotion.Name = "btn_promotion"
+        Me.btn_promotion.Size = New System.Drawing.Size(92, 32)
+        Me.btn_promotion.TabIndex = 14
+        Me.btn_promotion.Text = "Promotion"
+        Me.btn_promotion.UseVisualStyleBackColor = False
+        '
+        'lbl_discount
+        '
+        Me.lbl_discount.AutoSize = True
+        Me.lbl_discount.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_discount.Location = New System.Drawing.Point(565, 6)
+        Me.lbl_discount.Name = "lbl_discount"
+        Me.lbl_discount.Size = New System.Drawing.Size(23, 25)
+        Me.lbl_discount.TabIndex = 16
+        Me.lbl_discount.Text = "0"
+        '
+        'Discount
+        '
+        Me.Discount.AutoSize = True
+        Me.Discount.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Discount.Location = New System.Drawing.Point(468, 6)
+        Me.Discount.Name = "Discount"
+        Me.Discount.Size = New System.Drawing.Size(91, 25)
+        Me.Discount.TabIndex = 15
+        Me.Discount.Text = "Discount :"
+        '
+        'lbl_date_sale
+        '
+        Me.lbl_date_sale.AutoSize = True
+        Me.lbl_date_sale.Location = New System.Drawing.Point(301, 70)
+        Me.lbl_date_sale.Name = "lbl_date_sale"
+        Me.lbl_date_sale.Size = New System.Drawing.Size(26, 17)
+        Me.lbl_date_sale.TabIndex = 14
+        Me.lbl_date_sale.Text = "xxx"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(231, 70)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(50, 17)
+        Me.Label6.TabIndex = 13
+        Me.Label6.Text = "Date : "
+        '
+        'lbl_saleID
+        '
+        Me.lbl_saleID.AutoSize = True
+        Me.lbl_saleID.Location = New System.Drawing.Point(92, 70)
+        Me.lbl_saleID.Name = "lbl_saleID"
+        Me.lbl_saleID.Size = New System.Drawing.Size(26, 17)
+        Me.lbl_saleID.TabIndex = 12
+        Me.lbl_saleID.Text = "xxx"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(19, 70)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(61, 17)
+        Me.Label4.TabIndex = 11
+        Me.Label4.Text = "Sale ID :"
         '
         'Label2
         '
@@ -353,85 +543,20 @@ Partial Class coffeesale
         Me.rad_iced.Text = "Iced"
         Me.rad_iced.UseVisualStyleBackColor = True
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(19, 70)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(61, 17)
-        Me.Label4.TabIndex = 11
-        Me.Label4.Text = "Sale ID :"
-        '
-        'lbl_saleID
-        '
-        Me.lbl_saleID.AutoSize = True
-        Me.lbl_saleID.Location = New System.Drawing.Point(92, 70)
-        Me.lbl_saleID.Name = "lbl_saleID"
-        Me.lbl_saleID.Size = New System.Drawing.Size(26, 17)
-        Me.lbl_saleID.TabIndex = 12
-        Me.lbl_saleID.Text = "xxx"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(231, 70)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(50, 17)
-        Me.Label6.TabIndex = 13
-        Me.Label6.Text = "Date : "
-        '
-        'lbl_date_sale
-        '
-        Me.lbl_date_sale.AutoSize = True
-        Me.lbl_date_sale.Location = New System.Drawing.Point(301, 70)
-        Me.lbl_date_sale.Name = "lbl_date_sale"
-        Me.lbl_date_sale.Size = New System.Drawing.Size(26, 17)
-        Me.lbl_date_sale.TabIndex = 14
-        Me.lbl_date_sale.Text = "xxx"
-        '
-        'btn_promotion
-        '
-        Me.btn_promotion.BackColor = System.Drawing.Color.White
-        Me.btn_promotion.Font = New System.Drawing.Font("Impact", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_promotion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btn_promotion.Location = New System.Drawing.Point(370, 2)
-        Me.btn_promotion.Name = "btn_promotion"
-        Me.btn_promotion.Size = New System.Drawing.Size(92, 32)
-        Me.btn_promotion.TabIndex = 14
-        Me.btn_promotion.Text = "Promotion"
-        Me.btn_promotion.UseVisualStyleBackColor = False
-        '
-        'Discount
-        '
-        Me.Discount.AutoSize = True
-        Me.Discount.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Discount.Location = New System.Drawing.Point(468, 6)
-        Me.Discount.Name = "Discount"
-        Me.Discount.Size = New System.Drawing.Size(91, 25)
-        Me.Discount.TabIndex = 15
-        Me.Discount.Text = "Discount :"
-        '
-        'lbl_discount
-        '
-        Me.lbl_discount.AutoSize = True
-        Me.lbl_discount.Font = New System.Drawing.Font("Impact", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_discount.Location = New System.Drawing.Point(565, 6)
-        Me.lbl_discount.Name = "lbl_discount"
-        Me.lbl_discount.Size = New System.Drawing.Size(23, 25)
-        Me.lbl_discount.TabIndex = 16
-        Me.lbl_discount.Text = "0"
-        '
         'coffeesale
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(817, 466)
+        Me.ClientSize = New System.Drawing.Size(950, 536)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "coffeesale"
         Me.Text = "coffeesale"
         Me.Panel1.ResumeLayout(False)
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel7.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.Panel3.ResumeLayout(False)
@@ -481,4 +606,14 @@ Partial Class coffeesale
     Friend WithEvents btn_promotion As Button
     Friend WithEvents lbl_discount As Label
     Friend WithEvents Discount As Label
+    Friend WithEvents Panel7 As Panel
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents link_select_customer As LinkLabel
+    Friend WithEvents lbl_point As Label
+    Friend WithEvents lbl_name As Label
+    Friend WithEvents lbl_username As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents btn_customer_clear As LinkLabel
 End Class

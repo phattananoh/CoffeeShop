@@ -63,11 +63,12 @@
 
             End If
         Next
+
         cmd = New SqlClient.SqlCommand(sql, cn)
         If cmd.ExecuteNonQuery = 0 Then
             msg_error("Can not save")
         Else
-            sql = "insert into sale_Details(saleFullID,saleTotal,discount,discount_condition,sale_net) values(@saleFullID,@saleTotal,@discount,@discount_condition,@sale_net)"
+            sql = "insert into sale_Details(saleFullID,saleTotal,discount,discount_condition,sale_net,customer) values(@saleFullID,@saleTotal,@discount,@discount_condition,@sale_net,@customer)"
             cmd = New SqlClient.SqlCommand(sql, cn)
             cmd.Parameters.Clear()
             cmd.Parameters.AddWithValue("saleFullID", coffeesale.lbl_saleID.Text)
@@ -75,13 +76,33 @@
             cmd.Parameters.AddWithValue("discount", txt_discount.Text)
             cmd.Parameters.AddWithValue("discount_condition", promotion.lbl_condition.Text)
             cmd.Parameters.AddWithValue("sale_net", txt_total.Text)
+            cmd.Parameters.AddWithValue("customer", coffeesale.lbl_username.Text)
+
+
 
             If cmd.ExecuteNonQuery = 0 Then
                 msg_error("Can not Save")
             Else
                 msg_ok("Complete")
+                connect_open()
+                sql = "update customer set point+=" & lbl_point.Text & " where username = '" & coffeesale.lbl_username.Text & "'"
+                cmd = New SqlClient.SqlCommand(sql, cn)
+                If cmd.ExecuteNonQuery >= 1 Then
+                    msg_ok("เพิ่ม Point สำเร็จ")
+                Else
+                    msg_error("ไม่สามารถเพิ่ม Point ได้")
+
+                End If
+
+
+
+
+
+
             End If
+
         End If
+
         Me.Close()
         coffeesale.txt_total.Text = "0.00"
         coffeesale.generate_saleID()

@@ -42,6 +42,8 @@ Partial Class frm_total
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Price = New System.Windows.Forms.GroupBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.lbl_add_point = New System.Windows.Forms.Label()
+        Me.lbl_point = New System.Windows.Forms.Label()
         Me.Price.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -146,7 +148,7 @@ Partial Class frm_total
         Me.btn_confirm.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btn_confirm.Font = New System.Drawing.Font("Impact", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_confirm.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btn_confirm.Location = New System.Drawing.Point(126, 471)
+        Me.btn_confirm.Location = New System.Drawing.Point(114, 531)
         Me.btn_confirm.Name = "btn_confirm"
         Me.btn_confirm.Size = New System.Drawing.Size(120, 56)
         Me.btn_confirm.TabIndex = 9
@@ -158,7 +160,7 @@ Partial Class frm_total
         Me.btn_cancle.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btn_cancle.Font = New System.Drawing.Font("Impact", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_cancle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btn_cancle.Location = New System.Drawing.Point(269, 471)
+        Me.btn_cancle.Location = New System.Drawing.Point(257, 531)
         Me.btn_cancle.Name = "btn_cancle"
         Me.btn_cancle.Size = New System.Drawing.Size(120, 56)
         Me.btn_cancle.TabIndex = 10
@@ -258,13 +260,37 @@ Partial Class frm_total
         Me.PictureBox1.TabIndex = 18
         Me.PictureBox1.TabStop = False
         '
+        'lbl_add_point
+        '
+        Me.lbl_add_point.AutoSize = True
+        Me.lbl_add_point.Font = New System.Drawing.Font("Impact", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_add_point.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lbl_add_point.Location = New System.Drawing.Point(31, 452)
+        Me.lbl_add_point.Name = "lbl_add_point"
+        Me.lbl_add_point.Size = New System.Drawing.Size(74, 35)
+        Me.lbl_add_point.TabIndex = 19
+        Me.lbl_add_point.Text = "Point"
+        '
+        'lbl_point
+        '
+        Me.lbl_point.AutoSize = True
+        Me.lbl_point.Font = New System.Drawing.Font("Impact", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_point.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lbl_point.Location = New System.Drawing.Point(160, 452)
+        Me.lbl_point.Name = "lbl_point"
+        Me.lbl_point.Size = New System.Drawing.Size(30, 35)
+        Me.lbl_point.TabIndex = 20
+        Me.lbl_point.Text = "0"
+        '
         'frm_total
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(510, 548)
+        Me.ClientSize = New System.Drawing.Size(510, 599)
         Me.ControlBox = False
+        Me.Controls.Add(Me.lbl_point)
+        Me.Controls.Add(Me.lbl_add_point)
         Me.Controls.Add(Me.btn_cancle)
         Me.Controls.Add(Me.btn_confirm)
         Me.Controls.Add(Me.Label5)
@@ -304,4 +330,6 @@ Partial Class frm_total
     Friend WithEvents Label10 As Label
     Friend WithEvents Price As GroupBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents lbl_add_point As Label
+    Friend WithEvents lbl_point As Label
 End Class

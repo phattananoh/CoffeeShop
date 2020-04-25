@@ -59,4 +59,10 @@
     Private Sub txt_ID_TextChanged(sender As Object, e As EventArgs) Handles txt_ID.TextChanged
 
     End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Me.Hide()
+        frm_customer_login.Show()
+
+    End Sub
 End Class

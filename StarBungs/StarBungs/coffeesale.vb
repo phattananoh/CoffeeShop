@@ -153,6 +153,20 @@
             .txt_total.Text = txt_total.Text
             .txt_discount.Text = lbl_discount.Text
             .txt_total2.Text = .txt_total.Text - .txt_discount.Text
+
+            Dim point As Integer = .txt_total2.Text / 100
+            .lbl_point.Text = point
+            If lbl_username.Text = "..." Or lbl_name.Text = "..." Then
+                .lbl_point.Visible = False
+                .lbl_add_point.Visible =False 
+            Else
+                .lbl_point.Visible = True
+                .lbl_add_point.Visible = True
+
+            End If
+
+
+
             .txt_receive.Text = ""
             .txt_receive.Select()
             .Show()
@@ -172,5 +186,18 @@
             .txt_code.Select()
 
         End With
+    End Sub
+
+    Private Sub link_select_customer_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles link_select_customer.LinkClicked
+        frm_select_customer.Show()
+        frm_select_customer.Activate()
+
+    End Sub
+
+    Private Sub btn_customer_clear_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles btn_customer_clear.LinkClicked
+        lbl_username.Text = "..."
+        lbl_name.Text = "..."
+        lbl_point.Text = 0
+
     End Sub
 End Class

@@ -22,6 +22,11 @@ StarBungs
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:StarBungs.My.Resources.Resources._5555">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:StarBungs.My.Resources.Resources.default_coffee">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

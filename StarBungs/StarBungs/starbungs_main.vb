@@ -23,8 +23,10 @@
         End Sub
 
         Private Sub ToolStripButton3_Click(sender As Object, e As EventArgs) Handles ToolStripButton3.Click
+        frm_customer.Show()
+        frm_customer.MdiParent = Me
 
-        End Sub
+    End Sub
 
         Private Sub ToolStripButton4_Click(sender As Object, e As EventArgs) Handles ToolStripButton4.Click
         coffeesale.Show()
