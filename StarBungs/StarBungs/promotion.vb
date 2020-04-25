@@ -40,4 +40,8 @@
 
 
     End Sub
+
+    Private Sub lbl_discount_Click(sender As Object, e As EventArgs) Handles lbl_discount.Click
+
+    End Sub
 End Class

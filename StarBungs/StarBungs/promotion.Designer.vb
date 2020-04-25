@@ -95,9 +95,9 @@ Partial Class promotion
         Me.lbl_condition.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.lbl_condition.Location = New System.Drawing.Point(249, 186)
         Me.lbl_condition.Name = "lbl_condition"
-        Me.lbl_condition.Size = New System.Drawing.Size(31, 23)
+        Me.lbl_condition.Size = New System.Drawing.Size(20, 23)
         Me.lbl_condition.TabIndex = 5
-        Me.lbl_condition.Text = "xxx"
+        Me.lbl_condition.Text = "0"
         '
         'lbl_discount
         '
@@ -106,9 +106,9 @@ Partial Class promotion
         Me.lbl_discount.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.lbl_discount.Location = New System.Drawing.Point(249, 225)
         Me.lbl_discount.Name = "lbl_discount"
-        Me.lbl_discount.Size = New System.Drawing.Size(31, 23)
+        Me.lbl_discount.Size = New System.Drawing.Size(20, 23)
         Me.lbl_discount.TabIndex = 6
-        Me.lbl_discount.Text = "xxx"
+        Me.lbl_discount.Text = "0"
         '
         'bnt_confirm
         '

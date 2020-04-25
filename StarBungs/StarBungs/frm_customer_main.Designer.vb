@@ -41,13 +41,21 @@ Partial Class frm_customer_main
         Me.btn_use_point = New System.Windows.Forms.Button()
         Me.btn_edit = New System.Windows.Forms.Button()
         Me.btn_logout = New System.Windows.Forms.Button()
+        Me.txt_coupon_code = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.txt_use_coupon = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btn_history = New System.Windows.Forms.Button()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'txt_show_point
         '
+        Me.txt_show_point.Enabled = False
         Me.txt_show_point.Location = New System.Drawing.Point(91, 272)
         Me.txt_show_point.Name = "txt_show_point"
-        Me.txt_show_point.Size = New System.Drawing.Size(167, 22)
+        Me.txt_show_point.Size = New System.Drawing.Size(96, 22)
         Me.txt_show_point.TabIndex = 68
         '
         'Label25
@@ -61,7 +69,6 @@ Partial Class frm_customer_main
         '
         'date_show_born
         '
-        Me.date_show_born.Enabled = False
         Me.date_show_born.Location = New System.Drawing.Point(91, 140)
         Me.date_show_born.Name = "date_show_born"
         Me.date_show_born.Size = New System.Drawing.Size(167, 22)
@@ -69,7 +76,6 @@ Partial Class frm_customer_main
         '
         'txt_show_password
         '
-        Me.txt_show_password.Enabled = False
         Me.txt_show_password.Location = New System.Drawing.Point(388, 94)
         Me.txt_show_password.Name = "txt_show_password"
         Me.txt_show_password.Size = New System.Drawing.Size(140, 22)
@@ -85,7 +91,6 @@ Partial Class frm_customer_main
         '
         'txt_show_tel
         '
-        Me.txt_show_tel.Enabled = False
         Me.txt_show_tel.Location = New System.Drawing.Point(91, 230)
         Me.txt_show_tel.Name = "txt_show_tel"
         Me.txt_show_tel.Size = New System.Drawing.Size(167, 22)
@@ -93,7 +98,6 @@ Partial Class frm_customer_main
         '
         'txt_show_address
         '
-        Me.txt_show_address.Enabled = False
         Me.txt_show_address.Location = New System.Drawing.Point(91, 186)
         Me.txt_show_address.Name = "txt_show_address"
         Me.txt_show_address.Size = New System.Drawing.Size(436, 22)
@@ -101,7 +105,6 @@ Partial Class frm_customer_main
         '
         'txt_show_nickname
         '
-        Me.txt_show_nickname.Enabled = False
         Me.txt_show_nickname.Location = New System.Drawing.Point(91, 94)
         Me.txt_show_nickname.Name = "txt_show_nickname"
         Me.txt_show_nickname.Size = New System.Drawing.Size(167, 22)
@@ -109,7 +112,6 @@ Partial Class frm_customer_main
         '
         'txt_show_name
         '
-        Me.txt_show_name.Enabled = False
         Me.txt_show_name.Location = New System.Drawing.Point(91, 50)
         Me.txt_show_name.Name = "txt_show_name"
         Me.txt_show_name.Size = New System.Drawing.Size(167, 22)
@@ -180,7 +182,7 @@ Partial Class frm_customer_main
         '
         'btn_use_point
         '
-        Me.btn_use_point.Location = New System.Drawing.Point(278, 272)
+        Me.btn_use_point.Location = New System.Drawing.Point(416, 271)
         Me.btn_use_point.Name = "btn_use_point"
         Me.btn_use_point.Size = New System.Drawing.Size(75, 23)
         Me.btn_use_point.TabIndex = 69
@@ -189,7 +191,7 @@ Partial Class frm_customer_main
         '
         'btn_edit
         '
-        Me.btn_edit.Location = New System.Drawing.Point(130, 382)
+        Me.btn_edit.Location = New System.Drawing.Point(140, 405)
         Me.btn_edit.Name = "btn_edit"
         Me.btn_edit.Size = New System.Drawing.Size(114, 23)
         Me.btn_edit.TabIndex = 70
@@ -198,18 +200,72 @@ Partial Class frm_customer_main
         '
         'btn_logout
         '
-        Me.btn_logout.Location = New System.Drawing.Point(268, 382)
+        Me.btn_logout.Location = New System.Drawing.Point(278, 405)
         Me.btn_logout.Name = "btn_logout"
         Me.btn_logout.Size = New System.Drawing.Size(114, 23)
         Me.btn_logout.TabIndex = 71
         Me.btn_logout.Text = "ออกจากระบบ"
         Me.btn_logout.UseVisualStyleBackColor = True
         '
-        'frm_customer_login
+        'txt_coupon_code
+        '
+        Me.txt_coupon_code.Location = New System.Drawing.Point(21, 29)
+        Me.txt_coupon_code.Name = "txt_coupon_code"
+        Me.txt_coupon_code.Size = New System.Drawing.Size(167, 22)
+        Me.txt_coupon_code.TabIndex = 72
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(54, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(94, 17)
+        Me.Label1.TabIndex = 73
+        Me.Label1.Text = "Coupon Code"
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.txt_coupon_code)
+        Me.Panel1.Location = New System.Drawing.Point(176, 322)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(202, 65)
+        Me.Panel1.TabIndex = 74
+        '
+        'txt_use_coupon
+        '
+        Me.txt_use_coupon.Location = New System.Drawing.Point(296, 273)
+        Me.txt_use_coupon.Name = "txt_use_coupon"
+        Me.txt_use_coupon.Size = New System.Drawing.Size(96, 22)
+        Me.txt_use_coupon.TabIndex = 75
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(230, 275)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(53, 17)
+        Me.Label2.TabIndex = 76
+        Me.Label2.Text = "ระบุแต้ม"
+        '
+        'btn_history
+        '
+        Me.btn_history.Location = New System.Drawing.Point(416, 350)
+        Me.btn_history.Name = "btn_history"
+        Me.btn_history.Size = New System.Drawing.Size(75, 23)
+        Me.btn_history.TabIndex = 77
+        Me.btn_history.Text = "ประวัติ"
+        Me.btn_history.UseVisualStyleBackColor = True
+        '
+        'frm_customer_main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(556, 450)
+        Me.Controls.Add(Me.btn_history)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.txt_use_coupon)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btn_logout)
         Me.Controls.Add(Me.btn_edit)
         Me.Controls.Add(Me.btn_use_point)
@@ -229,8 +285,10 @@ Partial Class frm_customer_main
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Name = "frm_customer_login"
+        Me.Name = "frm_customer_main"
         Me.Text = "frm_customer_login"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -255,4 +313,10 @@ Partial Class frm_customer_main
     Friend WithEvents btn_use_point As Button
     Friend WithEvents btn_edit As Button
     Friend WithEvents btn_logout As Button
+    Friend WithEvents txt_coupon_code As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents txt_use_coupon As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents btn_history As Button
 End Class

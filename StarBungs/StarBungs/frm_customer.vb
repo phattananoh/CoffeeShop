@@ -88,7 +88,7 @@ Public Class frm_customer
         Dim username As String = txt_add_username.Text
         Dim password As String = txt_add_password.Text
 
-        sql = "insert into customer (username, password, name, nickname, born, address, tel, poin) values(@username, @password, @name, @nickname, @born, @address, @tel, @point)"
+        sql = "insert into customer (username, password, name, nickname, born, address, tel) values(@username, @password, @name, @nickname, @born, @address, @tel)"
         cmd = New SqlCommand(sql, cn)
         cmd.Parameters.Clear()
         cmd.Parameters.AddWithValue("username", username)
@@ -98,7 +98,7 @@ Public Class frm_customer
         cmd.Parameters.AddWithValue("born", born)
         cmd.Parameters.AddWithValue("address", address)
         cmd.Parameters.AddWithValue("tel", tel)
-        cmd.Parameters.AddWithValue("point", 0)
+
 
         If cmd.ExecuteNonQuery() >= 1 Then
             msg_ok("เพิ่มสำเร็จ")

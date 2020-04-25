@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frm_customer
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frm_customer
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.datagrid_search = New System.Windows.Forms.DataGridView()
@@ -29,6 +29,8 @@ Partial Class frm_customer
         Me.txt_search = New System.Windows.Forms.TextBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.txt_show_point = New System.Windows.Forms.TextBox()
+        Me.Label25 = New System.Windows.Forms.Label()
         Me.date_show_born = New System.Windows.Forms.DateTimePicker()
         Me.txt_show_password = New System.Windows.Forms.TextBox()
         Me.txt_show_username = New System.Windows.Forms.TextBox()
@@ -45,8 +47,8 @@ Partial Class frm_customer
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.btn_add_clear = New System.Windows.Forms.Button()
+        Me.btn_add_save = New System.Windows.Forms.Button()
         Me.date_add_born = New System.Windows.Forms.DateTimePicker()
         Me.txt_add_password = New System.Windows.Forms.TextBox()
         Me.txt_add_username = New System.Windows.Forms.TextBox()
@@ -61,10 +63,12 @@ Partial Class frm_customer
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.btn_add_save = New System.Windows.Forms.Button()
-        Me.btn_add_clear = New System.Windows.Forms.Button()
-        Me.btn_delete = New System.Windows.Forms.Button()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.Label16 = New System.Windows.Forms.Label()
+        Me.btn_delete = New System.Windows.Forms.Button()
+        Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.txt_edit_point = New System.Windows.Forms.TextBox()
+        Me.Label24 = New System.Windows.Forms.Label()
         Me.btn_edit_cancel = New System.Windows.Forms.Button()
         Me.btn_edit_button = New System.Windows.Forms.Button()
         Me.date_edit_born = New System.Windows.Forms.DateTimePicker()
@@ -81,10 +85,6 @@ Partial Class frm_customer
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.txt_edit_point = New System.Windows.Forms.TextBox()
-        Me.txt_show_point = New System.Windows.Forms.TextBox()
-        Me.Label25 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.datagrid_search, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -186,6 +186,22 @@ Partial Class frm_customer
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "แสดงข้อมูล"
         Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'txt_show_point
+        '
+        Me.txt_show_point.Location = New System.Drawing.Point(81, 249)
+        Me.txt_show_point.Name = "txt_show_point"
+        Me.txt_show_point.Size = New System.Drawing.Size(167, 22)
+        Me.txt_show_point.TabIndex = 52
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Location = New System.Drawing.Point(15, 252)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(60, 17)
+        Me.Label25.TabIndex = 51
+        Me.Label25.Text = "แต้มสะสม"
         '
         'date_show_born
         '
@@ -342,44 +358,23 @@ Partial Class frm_customer
         Me.TabPage2.Text = "เพิ่ม"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'TabPage3
+        'btn_add_clear
         '
-        Me.TabPage3.Controls.Add(Me.Label16)
-        Me.TabPage3.Controls.Add(Me.btn_delete)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(526, 421)
-        Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "ลบ"
-        Me.TabPage3.UseVisualStyleBackColor = True
+        Me.btn_add_clear.Location = New System.Drawing.Point(293, 294)
+        Me.btn_add_clear.Name = "btn_add_clear"
+        Me.btn_add_clear.Size = New System.Drawing.Size(75, 23)
+        Me.btn_add_clear.TabIndex = 32
+        Me.btn_add_clear.Text = "Clear"
+        Me.btn_add_clear.UseVisualStyleBackColor = True
         '
-        'TabPage4
+        'btn_add_save
         '
-        Me.TabPage4.Controls.Add(Me.txt_edit_point)
-        Me.TabPage4.Controls.Add(Me.Label24)
-        Me.TabPage4.Controls.Add(Me.btn_edit_cancel)
-        Me.TabPage4.Controls.Add(Me.btn_edit_button)
-        Me.TabPage4.Controls.Add(Me.date_edit_born)
-        Me.TabPage4.Controls.Add(Me.txt_edit_password)
-        Me.TabPage4.Controls.Add(Me.txt_edit_username)
-        Me.TabPage4.Controls.Add(Me.txt_edit_tel)
-        Me.TabPage4.Controls.Add(Me.txt_edit_address)
-        Me.TabPage4.Controls.Add(Me.txt_edit_nickname)
-        Me.TabPage4.Controls.Add(Me.txt_edit_name)
-        Me.TabPage4.Controls.Add(Me.Label17)
-        Me.TabPage4.Controls.Add(Me.Label18)
-        Me.TabPage4.Controls.Add(Me.Label19)
-        Me.TabPage4.Controls.Add(Me.Label20)
-        Me.TabPage4.Controls.Add(Me.Label21)
-        Me.TabPage4.Controls.Add(Me.Label22)
-        Me.TabPage4.Controls.Add(Me.Label23)
-        Me.TabPage4.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(526, 421)
-        Me.TabPage4.TabIndex = 3
-        Me.TabPage4.Text = "แก้ไข"
-        Me.TabPage4.UseVisualStyleBackColor = True
+        Me.btn_add_save.Location = New System.Drawing.Point(154, 294)
+        Me.btn_add_save.Name = "btn_add_save"
+        Me.btn_add_save.Size = New System.Drawing.Size(75, 23)
+        Me.btn_add_save.TabIndex = 31
+        Me.btn_add_save.Text = "Save"
+        Me.btn_add_save.UseVisualStyleBackColor = True
         '
         'date_add_born
         '
@@ -493,23 +488,26 @@ Partial Class frm_customer
         Me.Label15.TabIndex = 17
         Me.Label15.Text = "ชื่อสกุล"
         '
-        'btn_add_save
+        'TabPage3
         '
-        Me.btn_add_save.Location = New System.Drawing.Point(154, 294)
-        Me.btn_add_save.Name = "btn_add_save"
-        Me.btn_add_save.Size = New System.Drawing.Size(75, 23)
-        Me.btn_add_save.TabIndex = 31
-        Me.btn_add_save.Text = "Save"
-        Me.btn_add_save.UseVisualStyleBackColor = True
+        Me.TabPage3.Controls.Add(Me.Label16)
+        Me.TabPage3.Controls.Add(Me.btn_delete)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage3.Size = New System.Drawing.Size(526, 421)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "ลบ"
+        Me.TabPage3.UseVisualStyleBackColor = True
         '
-        'btn_add_clear
+        'Label16
         '
-        Me.btn_add_clear.Location = New System.Drawing.Point(293, 294)
-        Me.btn_add_clear.Name = "btn_add_clear"
-        Me.btn_add_clear.Size = New System.Drawing.Size(75, 23)
-        Me.btn_add_clear.TabIndex = 32
-        Me.btn_add_clear.Text = "Clear"
-        Me.btn_add_clear.UseVisualStyleBackColor = True
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(144, 151)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(247, 17)
+        Me.Label16.TabIndex = 1
+        Me.Label16.Text = "การลบลูกค้าจะไม่สามารถนำกลับมาใช้ใหม่ได้"
         '
         'btn_delete
         '
@@ -520,14 +518,48 @@ Partial Class frm_customer
         Me.btn_delete.Text = "ลบ"
         Me.btn_delete.UseVisualStyleBackColor = True
         '
-        'Label16
+        'TabPage4
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(144, 151)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(247, 17)
-        Me.Label16.TabIndex = 1
-        Me.Label16.Text = "การลบลูกค้าจะไม่สามารถนำกลับมาใช้ใหม่ได้"
+        Me.TabPage4.Controls.Add(Me.txt_edit_point)
+        Me.TabPage4.Controls.Add(Me.Label24)
+        Me.TabPage4.Controls.Add(Me.btn_edit_cancel)
+        Me.TabPage4.Controls.Add(Me.btn_edit_button)
+        Me.TabPage4.Controls.Add(Me.date_edit_born)
+        Me.TabPage4.Controls.Add(Me.txt_edit_password)
+        Me.TabPage4.Controls.Add(Me.txt_edit_username)
+        Me.TabPage4.Controls.Add(Me.txt_edit_tel)
+        Me.TabPage4.Controls.Add(Me.txt_edit_address)
+        Me.TabPage4.Controls.Add(Me.txt_edit_nickname)
+        Me.TabPage4.Controls.Add(Me.txt_edit_name)
+        Me.TabPage4.Controls.Add(Me.Label17)
+        Me.TabPage4.Controls.Add(Me.Label18)
+        Me.TabPage4.Controls.Add(Me.Label19)
+        Me.TabPage4.Controls.Add(Me.Label20)
+        Me.TabPage4.Controls.Add(Me.Label21)
+        Me.TabPage4.Controls.Add(Me.Label22)
+        Me.TabPage4.Controls.Add(Me.Label23)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Size = New System.Drawing.Size(526, 421)
+        Me.TabPage4.TabIndex = 3
+        Me.TabPage4.Text = "แก้ไข"
+        Me.TabPage4.UseVisualStyleBackColor = True
+        '
+        'txt_edit_point
+        '
+        Me.txt_edit_point.Location = New System.Drawing.Point(81, 260)
+        Me.txt_edit_point.Name = "txt_edit_point"
+        Me.txt_edit_point.Size = New System.Drawing.Size(167, 22)
+        Me.txt_edit_point.TabIndex = 50
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Location = New System.Drawing.Point(15, 263)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(60, 17)
+        Me.Label24.TabIndex = 49
+        Me.Label24.Text = "แต้มสะสม"
         '
         'btn_edit_cancel
         '
@@ -659,38 +691,6 @@ Partial Class frm_customer
         Me.Label23.Size = New System.Drawing.Size(45, 17)
         Me.Label23.TabIndex = 33
         Me.Label23.Text = "ชื่อสกุล"
-        '
-        'Label24
-        '
-        Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(15, 263)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(60, 17)
-        Me.Label24.TabIndex = 49
-        Me.Label24.Text = "แต้มสะสม"
-        '
-        'txt_edit_point
-        '
-        Me.txt_edit_point.Location = New System.Drawing.Point(81, 260)
-        Me.txt_edit_point.Name = "txt_edit_point"
-        Me.txt_edit_point.Size = New System.Drawing.Size(167, 22)
-        Me.txt_edit_point.TabIndex = 50
-        '
-        'txt_show_point
-        '
-        Me.txt_show_point.Location = New System.Drawing.Point(81, 249)
-        Me.txt_show_point.Name = "txt_show_point"
-        Me.txt_show_point.Size = New System.Drawing.Size(167, 22)
-        Me.txt_show_point.TabIndex = 52
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(15, 252)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(60, 17)
-        Me.Label25.TabIndex = 51
-        Me.Label25.Text = "แต้มสะสม"
         '
         'frm_customer
         '

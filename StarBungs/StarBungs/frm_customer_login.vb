@@ -15,7 +15,7 @@ Public Class frm_customer_login
         Dim username As String = txt_show_username.Text
         Dim password As String = txt_show_password.Text
 
-        sql = "insert into customer (username, password, name, nickname, born, address, tel, poin) values(@username, @password, @name, @nickname, @born, @address, @tel, @point)"
+        sql = "insert into customer (username, password, name, nickname, born, address, tel) values(@username, @password, @name, @nickname, @born, @address, @tel)"
         cmd = New SqlCommand(sql, cn)
         cmd.Parameters.Clear()
         cmd.Parameters.AddWithValue("username", username)
@@ -52,7 +52,7 @@ Public Class frm_customer_login
 
     Private Sub btn_login_Click(sender As Object, e As EventArgs) Handles btn_login.Click
         connect_open()
-        sql = "select * from customer where username'" & txt_username1.Text & "' and password'" & txt_password1.Text & "'"
+        sql = "select * from customer where username='" & txt_username1.Text & "' AND password='" & txt_password1.Text & "'"
 
         DA = New SqlDataAdapter(sql, cn)
         DS = New DataSet
@@ -67,7 +67,15 @@ Public Class frm_customer_login
             Me.Hide()
             frm_customer_main.Show()
 
-
+            With frm_customer_main
+                .txt_show_address.Text = DT.Rows(0)("address")
+                .txt_show_name.Text = DT.Rows(0)("name")
+                .txt_show_nickname.Text = DT.Rows(0)("nickname")
+                .txt_show_password.Text = DT.Rows(0)("password")
+                .txt_show_point.Text = DT.Rows(0)("point")
+                .txt_show_tel.Text = DT.Rows(0)("tel")
+                .txt_show_username.Text = DT.Rows(0)("username")
+            End With
 
 
         End If

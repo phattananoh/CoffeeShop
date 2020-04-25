@@ -54,3 +54,4 @@ C:\Users\ADVICE\Desktop\CoffeeShop-master\StarBungs\StarBungs\obj\Debug\StarBung
 C:\Users\ADVICE\Desktop\CoffeeShop-master\StarBungs\StarBungs\obj\Debug\StarBungs.frm_select_customer.resources
 C:\Users\ADVICE\Desktop\CoffeeShop-master\StarBungs\StarBungs\obj\Debug\StarBungs.frm_customer_main.resources
 C:\Users\ADVICE\Desktop\CoffeeShop-master\StarBungs\StarBungs\obj\Debug\StarBungs.frm_customer_login.resources
+C:\Users\ADVICE\Desktop\CoffeeShop-master\StarBungs\StarBungs\obj\Debug\StarBungs.frm_history.resources

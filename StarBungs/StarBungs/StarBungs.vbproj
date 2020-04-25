@@ -108,6 +108,12 @@
     <Compile Include="frm_customer_login.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_history.Designer.vb">
+      <DependentUpon>frm_history.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_history.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_selectprice.Designer.vb">
       <DependentUpon>frm_selectprice.vb</DependentUpon>
     </Compile>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_customer_login.resx">
       <DependentUpon>frm_customer_login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_history.resx">
+      <DependentUpon>frm_history.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_selectprice.resx">
       <DependentUpon>frm_selectprice.vb</DependentUpon>
