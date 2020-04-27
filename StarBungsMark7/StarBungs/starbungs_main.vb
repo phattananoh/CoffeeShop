@@ -45,4 +45,14 @@
         frm_staffs.MdiParent = Me
 
     End Sub
+
+    Private Sub History_Menu_Click(sender As Object, e As EventArgs)
+        frm_history.Show()
+        frm_history.MdiParent = Me
+    End Sub
+
+    Private Sub ToolStripButton1_Click_1(sender As Object, e As EventArgs) Handles statistics.Click
+        frm_history.Show()
+        frm_history.MdiParent = Me
+    End Sub
 End Class

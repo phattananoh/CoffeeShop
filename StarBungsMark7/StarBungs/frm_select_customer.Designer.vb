@@ -22,6 +22,7 @@ Partial Class frm_select_customer
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.txt_search = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.datagrid_search = New System.Windows.Forms.DataGridView()
@@ -31,25 +32,35 @@ Partial Class frm_select_customer
         '
         'txt_search
         '
-        Me.txt_search.Location = New System.Drawing.Point(58, 22)
+        Me.txt_search.Location = New System.Drawing.Point(71, 22)
         Me.txt_search.Name = "txt_search"
-        Me.txt_search.Size = New System.Drawing.Size(290, 22)
+        Me.txt_search.Size = New System.Drawing.Size(277, 22)
         Me.txt_search.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(12, 25)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(40, 17)
+        Me.Label1.Size = New System.Drawing.Size(53, 17)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "ค้นหา"
+        Me.Label1.Text = "Search"
         '
         'datagrid_search
         '
         Me.datagrid_search.AllowUserToAddRows = False
         Me.datagrid_search.AllowUserToDeleteRows = False
+        Me.datagrid_search.BackgroundColor = System.Drawing.Color.DarkOliveGreen
         Me.datagrid_search.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Impact", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.datagrid_search.DefaultCellStyle = DataGridViewCellStyle1
         Me.datagrid_search.Location = New System.Drawing.Point(12, 50)
         Me.datagrid_search.Name = "datagrid_search"
         Me.datagrid_search.ReadOnly = True
@@ -62,24 +73,29 @@ Partial Class frm_select_customer
         '
         'btn_search
         '
-        Me.btn_search.Location = New System.Drawing.Point(138, 358)
+        Me.btn_search.BackColor = System.Drawing.Color.White
+        Me.btn_search.Font = New System.Drawing.Font("Impact", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_search.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btn_search.Location = New System.Drawing.Point(125, 358)
         Me.btn_search.Name = "btn_search"
-        Me.btn_search.Size = New System.Drawing.Size(75, 31)
+        Me.btn_search.Size = New System.Drawing.Size(94, 37)
         Me.btn_search.TabIndex = 3
-        Me.btn_search.Text = "ตกลง"
-        Me.btn_search.UseVisualStyleBackColor = True
+        Me.btn_search.Text = "Confirm"
+        Me.btn_search.UseVisualStyleBackColor = False
         '
         'frm_select_customer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(360, 407)
         Me.Controls.Add(Me.btn_search)
         Me.Controls.Add(Me.datagrid_search)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txt_search)
+        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Name = "frm_select_customer"
-        Me.Text = "เลือกลูกค้า"
+        Me.Text = "Select Customer"
         CType(Me.datagrid_search, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

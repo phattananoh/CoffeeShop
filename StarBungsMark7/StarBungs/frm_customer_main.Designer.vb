@@ -344,7 +344,7 @@ Partial Class frm_customer_main
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Name = "frm_customer_main"
-        Me.Text = "frm_customer_login"
+        Me.Text = "Customer"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.Datagrid_bill, System.ComponentModel.ISupportInitialize).EndInit()

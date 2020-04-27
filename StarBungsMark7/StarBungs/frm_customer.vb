@@ -147,6 +147,17 @@ Public Class frm_customer
     End Sub
 
     Private Sub btn_delete_Click(sender As Object, e As EventArgs) Handles btn_delete.Click
+        If txt_confirm.Text <> "CONFIRM" Then
+            msg_error("Please enter CONFIRM again")
+            txt_confirm.Text = ""
+            txt_confirm.Select()
+            Return
+
+
+
+
+        End If
+
         If confirm("ยืนยันการลบหรือไม่ ?") = vbNo Then
             Return
         End If
@@ -226,5 +237,69 @@ Public Class frm_customer
         DA.Fill(DS, "table")
         datagrid_show_list.DataSource = DS.Tables("table")
         change_list_collum()
+    End Sub
+
+    Private Sub date_show_born_ValueChanged(sender As Object, e As EventArgs) Handles date_show_born.ValueChanged
+
+    End Sub
+
+    Private Sub txt_show_name_TextChanged(sender As Object, e As EventArgs) Handles txt_show_name.TextChanged
+
+    End Sub
+
+    Private Sub txt_show_nickname_TextChanged(sender As Object, e As EventArgs) Handles txt_show_nickname.TextChanged
+
+    End Sub
+
+    Private Sub txt_show_address_TextChanged(sender As Object, e As EventArgs) Handles txt_show_address.TextChanged
+
+    End Sub
+
+    Private Sub txt_show_tel_TextChanged(sender As Object, e As EventArgs) Handles txt_show_tel.TextChanged
+
+    End Sub
+
+    Private Sub txt_show_point_TextChanged(sender As Object, e As EventArgs) Handles txt_show_point.TextChanged
+
+    End Sub
+
+    Private Sub txt_show_username_TextChanged(sender As Object, e As EventArgs) Handles txt_show_username.TextChanged
+
+    End Sub
+
+    Private Sub txt_show_password_TextChanged(sender As Object, e As EventArgs) Handles txt_show_password.TextChanged
+
+    End Sub
+
+    Private Sub txt_edit_name_TextChanged(sender As Object, e As EventArgs) Handles txt_edit_name.TextChanged
+
+    End Sub
+
+    Private Sub txt_edit_nickname_TextChanged(sender As Object, e As EventArgs) Handles txt_edit_nickname.TextChanged
+
+    End Sub
+
+    Private Sub txt_edit_address_TextChanged(sender As Object, e As EventArgs) Handles txt_edit_address.TextChanged
+
+    End Sub
+
+    Private Sub txt_edit_tel_TextChanged(sender As Object, e As EventArgs) Handles txt_edit_tel.TextChanged
+
+    End Sub
+
+    Private Sub txt_edit_point_TextChanged(sender As Object, e As EventArgs) Handles txt_edit_point.TextChanged
+
+    End Sub
+
+    Private Sub txt_edit_password_TextChanged(sender As Object, e As EventArgs) Handles txt_edit_password.TextChanged
+
+    End Sub
+
+    Private Sub txt_edit_username_TextChanged(sender As Object, e As EventArgs) Handles txt_edit_username.TextChanged
+
+    End Sub
+
+    Private Sub date_edit_born_ValueChanged(sender As Object, e As EventArgs) Handles date_edit_born.ValueChanged
+
     End Sub
 End Class

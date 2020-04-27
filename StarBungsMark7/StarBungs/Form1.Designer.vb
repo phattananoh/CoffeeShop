@@ -59,18 +59,19 @@ Partial Class Form1
         '
         'txt_ID
         '
-        Me.txt_ID.Location = New System.Drawing.Point(150, 291)
+        Me.txt_ID.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.txt_ID.Location = New System.Drawing.Point(150, 287)
         Me.txt_ID.Name = "txt_ID"
-        Me.txt_ID.Size = New System.Drawing.Size(207, 22)
+        Me.txt_ID.Size = New System.Drawing.Size(207, 30)
         Me.txt_ID.TabIndex = 3
         '
         'txt_Password
         '
-        Me.txt_Password.Font = New System.Drawing.Font("Impact", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Password.Location = New System.Drawing.Point(150, 345)
+        Me.txt_Password.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.txt_Password.Location = New System.Drawing.Point(150, 341)
         Me.txt_Password.Name = "txt_Password"
         Me.txt_Password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(35)
-        Me.txt_Password.Size = New System.Drawing.Size(207, 23)
+        Me.txt_Password.Size = New System.Drawing.Size(207, 30)
         Me.txt_Password.TabIndex = 5
         '
         'Label3
@@ -109,14 +110,14 @@ Partial Class Form1
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel1.Location = New System.Drawing.Point(294, 507)
+        Me.LinkLabel1.Font = New System.Drawing.Font("Impact", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel1.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.LinkLabel1.Location = New System.Drawing.Point(290, 506)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(137, 20)
+        Me.LinkLabel1.Size = New System.Drawing.Size(141, 21)
         Me.LinkLabel1.TabIndex = 8
         Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Login สำหรับลูกค้า"
+        Me.LinkLabel1.Text = "Login for customer"
         '
         'PictureBox1
         '

@@ -139,7 +139,7 @@ Public Class frm_customer_main
 
 
     Public Sub change_bill_collum()
-        Dim str() As String = {"No.", "ID", "Subtotal", "Discount", "Detail", "Total", "Customer"}
+        Dim str() As String = {"No.", "ID", "Subtotal", "Discount", "Detail", "Total", "Customer", "staff"}
         For i As Integer = 0 To Datagrid_bill.Columns.Count - 1
             Datagrid_bill.Columns(i).HeaderText = str(i)
         Next

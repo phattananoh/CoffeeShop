@@ -68,7 +68,7 @@
         If cmd.ExecuteNonQuery = 0 Then
             msg_error("Can not save")
         Else
-            sql = "insert into sale_Details(saleFullID,saleTotal,discount,discount_condition,sale_net,customer) values(@saleFullID,@saleTotal,@discount,@discount_condition,@sale_net,@customer)"
+            sql = "insert into sale_Details(saleFullID,saleTotal,discount,discount_condition,sale_net,customer,staff) values(@saleFullID,@saleTotal,@discount,@discount_condition,@sale_net,@customer,@staff)"
             cmd = New SqlClient.SqlCommand(sql, cn)
             cmd.Parameters.Clear()
             cmd.Parameters.AddWithValue("saleFullID", coffeesale.lbl_saleID.Text)
@@ -77,6 +77,7 @@
             cmd.Parameters.AddWithValue("discount_condition", promotion.lbl_condition.Text)
             cmd.Parameters.AddWithValue("sale_net", txt_total.Text)
             cmd.Parameters.AddWithValue("customer", coffeesale.lbl_username.Text)
+            cmd.Parameters.AddWithValue("staff", starbungs_main.lbl_Name.Text)
 
 
 

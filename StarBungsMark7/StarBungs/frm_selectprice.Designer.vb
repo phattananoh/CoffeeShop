@@ -190,7 +190,6 @@ Partial Class frm_selectprice
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(343, 505)
-        Me.ControlBox = False
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txt_amount)
         Me.Controls.Add(Me.lbl_coffeeName)

@@ -22,6 +22,7 @@ Partial Class frm_staffs
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.DataGrid_Search = New System.Windows.Forms.DataGridView()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -126,7 +127,16 @@ Partial Class frm_staffs
         '
         Me.DataGrid_Search.AllowUserToAddRows = False
         Me.DataGrid_Search.AllowUserToDeleteRows = False
+        Me.DataGrid_Search.BackgroundColor = System.Drawing.Color.DarkOliveGreen
         Me.DataGrid_Search.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Impact", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGrid_Search.DefaultCellStyle = DataGridViewCellStyle1
         Me.DataGrid_Search.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGrid_Search.Location = New System.Drawing.Point(0, 79)
         Me.DataGrid_Search.Name = "DataGrid_Search"
@@ -140,6 +150,7 @@ Partial Class frm_staffs
         '
         'Panel2
         '
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Controls.Add(Me.TextBox1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
@@ -151,6 +162,7 @@ Partial Class frm_staffs
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(22, 33)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(53, 17)
@@ -179,6 +191,7 @@ Partial Class frm_staffs
         '
         'TabPage1
         '
+        Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.TabPage1.Controls.Add(Me.GroupBox4)
         Me.TabPage1.Controls.Add(Me.txt_show_gender)
         Me.TabPage1.Controls.Add(Me.txt_show_email)
@@ -193,7 +206,6 @@ Partial Class frm_staffs
         Me.TabPage1.Size = New System.Drawing.Size(606, 473)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Staff"
-        Me.TabPage1.UseVisualStyleBackColor = True
         '
         'GroupBox4
         '
@@ -204,6 +216,7 @@ Partial Class frm_staffs
         Me.GroupBox4.Controls.Add(Me.ck_show_Menu)
         Me.GroupBox4.Controls.Add(Me.ck_show_Coupon)
         Me.GroupBox4.Controls.Add(Me.ck_show_Sale)
+        Me.GroupBox4.ForeColor = System.Drawing.Color.White
         Me.GroupBox4.Location = New System.Drawing.Point(37, 152)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(445, 173)
@@ -223,6 +236,7 @@ Partial Class frm_staffs
         'txt_show_level
         '
         Me.txt_show_level.Enabled = False
+        Me.txt_show_level.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.txt_show_level.Location = New System.Drawing.Point(103, 31)
         Me.txt_show_level.Name = "txt_show_level"
         Me.txt_show_level.Size = New System.Drawing.Size(206, 22)
@@ -286,6 +300,7 @@ Partial Class frm_staffs
         'txt_show_gender
         '
         Me.txt_show_gender.Enabled = False
+        Me.txt_show_gender.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.txt_show_gender.Location = New System.Drawing.Point(158, 363)
         Me.txt_show_gender.Name = "txt_show_gender"
         Me.txt_show_gender.Size = New System.Drawing.Size(206, 22)
@@ -294,6 +309,7 @@ Partial Class frm_staffs
         'txt_show_email
         '
         Me.txt_show_email.Enabled = False
+        Me.txt_show_email.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.txt_show_email.Location = New System.Drawing.Point(158, 391)
         Me.txt_show_email.Name = "txt_show_email"
         Me.txt_show_email.Size = New System.Drawing.Size(206, 22)
@@ -302,6 +318,7 @@ Partial Class frm_staffs
         'txt_show_Name
         '
         Me.txt_show_Name.Enabled = False
+        Me.txt_show_Name.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.txt_show_Name.Location = New System.Drawing.Point(158, 335)
         Me.txt_show_Name.Name = "txt_show_Name"
         Me.txt_show_Name.Size = New System.Drawing.Size(206, 22)
@@ -310,6 +327,7 @@ Partial Class frm_staffs
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(89, 394)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(50, 17)
@@ -319,6 +337,7 @@ Partial Class frm_staffs
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(78, 366)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(56, 17)
@@ -331,6 +350,7 @@ Partial Class frm_staffs
         Me.GroupBox1.Controls.Add(Me.txt_show_ID)
         Me.GroupBox1.Controls.Add(Me.Username)
         Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.ForeColor = System.Drawing.Color.White
         Me.GroupBox1.Location = New System.Drawing.Point(37, 15)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(445, 131)
@@ -341,6 +361,7 @@ Partial Class frm_staffs
         'txt_show_Password
         '
         Me.txt_show_Password.Enabled = False
+        Me.txt_show_Password.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.txt_show_Password.Location = New System.Drawing.Point(114, 80)
         Me.txt_show_Password.Name = "txt_show_Password"
         Me.txt_show_Password.Size = New System.Drawing.Size(206, 22)
@@ -349,6 +370,7 @@ Partial Class frm_staffs
         'txt_show_ID
         '
         Me.txt_show_ID.Enabled = False
+        Me.txt_show_ID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.txt_show_ID.Location = New System.Drawing.Point(114, 39)
         Me.txt_show_ID.Name = "txt_show_ID"
         Me.txt_show_ID.Size = New System.Drawing.Size(206, 22)
@@ -375,6 +397,7 @@ Partial Class frm_staffs
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(89, 338)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(45, 17)
@@ -383,6 +406,7 @@ Partial Class frm_staffs
         '
         'TabPage2
         '
+        Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.TabPage2.Controls.Add(Me.Button5)
         Me.TabPage2.Controls.Add(Me.Button1)
         Me.TabPage2.Controls.Add(Me.GroupBox3)
@@ -399,25 +423,30 @@ Partial Class frm_staffs
         Me.TabPage2.Size = New System.Drawing.Size(606, 473)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Add"
-        Me.TabPage2.UseVisualStyleBackColor = True
         '
         'Button5
         '
+        Me.Button5.BackColor = System.Drawing.Color.White
+        Me.Button5.Font = New System.Drawing.Font("Impact", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button5.Location = New System.Drawing.Point(381, 322)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 30
         Me.Button5.Text = "Clear"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.Button5.UseVisualStyleBackColor = False
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.White
+        Me.Button1.Font = New System.Drawing.Font("Impact", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button1.Location = New System.Drawing.Point(381, 430)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(116, 35)
         Me.Button1.TabIndex = 19
         Me.Button1.Text = "Add"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'GroupBox3
         '
@@ -428,6 +457,7 @@ Partial Class frm_staffs
         Me.GroupBox3.Controls.Add(Me.CheckBox_Menu)
         Me.GroupBox3.Controls.Add(Me.CheckBox_promotion)
         Me.GroupBox3.Controls.Add(Me.CheckBox_sale)
+        Me.GroupBox3.ForeColor = System.Drawing.Color.White
         Me.GroupBox3.Location = New System.Drawing.Point(37, 144)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(460, 167)
@@ -527,6 +557,7 @@ Partial Class frm_staffs
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(75, 405)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(50, 17)
@@ -536,6 +567,7 @@ Partial Class frm_staffs
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.ForeColor = System.Drawing.Color.White
         Me.Label7.Location = New System.Drawing.Point(66, 365)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(56, 17)
@@ -548,6 +580,7 @@ Partial Class frm_staffs
         Me.GroupBox2.Controls.Add(Me.txt_add_user)
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.Label9)
+        Me.GroupBox2.ForeColor = System.Drawing.Color.White
         Me.GroupBox2.Location = New System.Drawing.Point(37, 22)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(445, 116)
@@ -590,6 +623,7 @@ Partial Class frm_staffs
         'Label10
         '
         Me.Label10.AutoSize = True
+        Me.Label10.ForeColor = System.Drawing.Color.White
         Me.Label10.Location = New System.Drawing.Point(80, 328)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(45, 17)
@@ -598,6 +632,7 @@ Partial Class frm_staffs
         '
         'TabPage3
         '
+        Me.TabPage3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.TabPage3.Controls.Add(Me.Button4)
         Me.TabPage3.Controls.Add(Me.Button3)
         Me.TabPage3.Controls.Add(Me.GroupBox5)
@@ -608,30 +643,36 @@ Partial Class frm_staffs
         Me.TabPage3.Controls.Add(Me.Label16)
         Me.TabPage3.Controls.Add(Me.GroupBox6)
         Me.TabPage3.Controls.Add(Me.Label19)
+        Me.TabPage3.ForeColor = System.Drawing.Color.White
         Me.TabPage3.Location = New System.Drawing.Point(4, 25)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Size = New System.Drawing.Size(606, 473)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Edit"
-        Me.TabPage3.UseVisualStyleBackColor = True
         '
         'Button4
         '
+        Me.Button4.BackColor = System.Drawing.Color.White
+        Me.Button4.Font = New System.Drawing.Font("Impact", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button4.Location = New System.Drawing.Point(376, 317)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 29
         Me.Button4.Text = "Clear"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button4.UseVisualStyleBackColor = False
         '
         'Button3
         '
+        Me.Button3.BackColor = System.Drawing.Color.White
+        Me.Button3.Font = New System.Drawing.Font("Impact", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button3.Location = New System.Drawing.Point(376, 421)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(116, 35)
         Me.Button3.TabIndex = 28
         Me.Button3.Text = "Edit"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'GroupBox5
         '
@@ -642,6 +683,7 @@ Partial Class frm_staffs
         Me.GroupBox5.Controls.Add(Me.cbEdit_Menu)
         Me.GroupBox5.Controls.Add(Me.cbEdit_Coupon)
         Me.GroupBox5.Controls.Add(Me.cbEdit_sale)
+        Me.GroupBox5.ForeColor = System.Drawing.Color.White
         Me.GroupBox5.Location = New System.Drawing.Point(32, 137)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(460, 167)
@@ -741,6 +783,7 @@ Partial Class frm_staffs
         'Label14
         '
         Me.Label14.AutoSize = True
+        Me.Label14.ForeColor = System.Drawing.Color.White
         Me.Label14.Location = New System.Drawing.Point(70, 398)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(50, 17)
@@ -750,6 +793,7 @@ Partial Class frm_staffs
         'Label16
         '
         Me.Label16.AutoSize = True
+        Me.Label16.ForeColor = System.Drawing.Color.White
         Me.Label16.Location = New System.Drawing.Point(61, 358)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(56, 17)
@@ -762,6 +806,7 @@ Partial Class frm_staffs
         Me.GroupBox6.Controls.Add(Me.txt_edit_ID)
         Me.GroupBox6.Controls.Add(Me.Label17)
         Me.GroupBox6.Controls.Add(Me.Label18)
+        Me.GroupBox6.ForeColor = System.Drawing.Color.White
         Me.GroupBox6.Location = New System.Drawing.Point(32, 15)
         Me.GroupBox6.Name = "GroupBox6"
         Me.GroupBox6.Size = New System.Drawing.Size(445, 116)
@@ -804,6 +849,7 @@ Partial Class frm_staffs
         'Label19
         '
         Me.Label19.AutoSize = True
+        Me.Label19.ForeColor = System.Drawing.Color.White
         Me.Label19.Location = New System.Drawing.Point(75, 321)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(45, 17)
@@ -812,6 +858,7 @@ Partial Class frm_staffs
         '
         'TabPage4
         '
+        Me.TabPage4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.TabPage4.Controls.Add(Me.Button2)
         Me.TabPage4.Controls.Add(Me.Label15)
         Me.TabPage4.Controls.Add(Me.txt_confirm)
@@ -820,35 +867,38 @@ Partial Class frm_staffs
         Me.TabPage4.Size = New System.Drawing.Size(606, 473)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Remove"
-        Me.TabPage4.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button2.BackColor = System.Drawing.Color.White
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(221, 280)
+        Me.Button2.Font = New System.Drawing.Font("Impact", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button2.Location = New System.Drawing.Point(268, 276)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(94, 40)
         Me.Button2.TabIndex = 15
-        Me.Button2.Text = "Remove"
+        Me.Button2.Text = "Delete"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(146, 214)
+        Me.Label15.Font = New System.Drawing.Font("Impact", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.White
+        Me.Label15.Location = New System.Drawing.Point(202, 232)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(230, 17)
+        Me.Label15.Size = New System.Drawing.Size(241, 21)
         Me.Label15.TabIndex = 14
-        Me.Label15.Text = "please enter ""CONFIRM"" to remove"
+        Me.Label15.Text = "please enter ""CONFIRM"" to Delete"
         '
         'txt_confirm
         '
-        Me.txt_confirm.Location = New System.Drawing.Point(187, 183)
+        Me.txt_confirm.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.txt_confirm.Location = New System.Drawing.Point(239, 199)
         Me.txt_confirm.Name = "txt_confirm"
-        Me.txt_confirm.Size = New System.Drawing.Size(152, 22)
+        Me.txt_confirm.Size = New System.Drawing.Size(152, 30)
         Me.txt_confirm.TabIndex = 13
         '
         'frm_staffs
@@ -859,7 +909,7 @@ Partial Class frm_staffs
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "frm_staffs"
-        Me.Text = "frm_staffs"
+        Me.Text = "Staff"
         Me.Panel1.ResumeLayout(False)
         CType(Me.DataGrid_Search, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)

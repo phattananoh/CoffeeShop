@@ -39,6 +39,7 @@ Partial Class starbungs_main
         Me.Level = New System.Windows.Forms.ToolStripStatusLabel()
         Me.lbl_Level = New System.Windows.Forms.ToolStripStatusLabel()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.statistics = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -47,30 +48,30 @@ Partial Class starbungs_main
         '
         Me.ToolStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mn_sale, Me.mn_menu, Me.mn_customers, Me.mn_staffs, Me.mn_promition, Me.ToolStripButton6})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mn_sale, Me.mn_menu, Me.mn_customers, Me.mn_staffs, Me.mn_promition, Me.statistics, Me.ToolStripButton6})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(800, 123)
+        Me.ToolStrip1.Size = New System.Drawing.Size(873, 123)
         Me.ToolStrip1.TabIndex = 1
         Me.ToolStrip1.Text = "ToolStrip1"
         '
         'mn_sale
         '
         Me.mn_sale.AutoSize = False
-        Me.mn_sale.Font = New System.Drawing.Font("Impact", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mn_sale.Font = New System.Drawing.Font("Impact", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mn_sale.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.mn_sale.Image = CType(resources.GetObject("mn_sale.Image"), System.Drawing.Image)
         Me.mn_sale.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.mn_sale.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.mn_sale.Name = "mn_sale"
-        Me.mn_sale.Size = New System.Drawing.Size(100, 100)
+        Me.mn_sale.Size = New System.Drawing.Size(120, 120)
         Me.mn_sale.Text = "Sale"
         Me.mn_sale.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'mn_menu
         '
         Me.mn_menu.AutoSize = False
-        Me.mn_menu.Font = New System.Drawing.Font("Impact", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mn_menu.Font = New System.Drawing.Font("Impact", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mn_menu.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.mn_menu.Image = CType(resources.GetObject("mn_menu.Image"), System.Drawing.Image)
         Me.mn_menu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
@@ -83,7 +84,7 @@ Partial Class starbungs_main
         'mn_customers
         '
         Me.mn_customers.AutoSize = False
-        Me.mn_customers.Font = New System.Drawing.Font("Impact", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mn_customers.Font = New System.Drawing.Font("Impact", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mn_customers.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.mn_customers.Image = CType(resources.GetObject("mn_customers.Image"), System.Drawing.Image)
         Me.mn_customers.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
@@ -96,7 +97,7 @@ Partial Class starbungs_main
         'mn_staffs
         '
         Me.mn_staffs.AutoSize = False
-        Me.mn_staffs.Font = New System.Drawing.Font("Impact", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mn_staffs.Font = New System.Drawing.Font("Impact", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mn_staffs.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.mn_staffs.Image = CType(resources.GetObject("mn_staffs.Image"), System.Drawing.Image)
         Me.mn_staffs.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
@@ -109,20 +110,21 @@ Partial Class starbungs_main
         'mn_promition
         '
         Me.mn_promition.AutoSize = False
-        Me.mn_promition.Font = New System.Drawing.Font("Impact", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mn_promition.Font = New System.Drawing.Font("Impact", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mn_promition.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.mn_promition.Image = CType(resources.GetObject("mn_promition.Image"), System.Drawing.Image)
         Me.mn_promition.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.mn_promition.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.mn_promition.Name = "mn_promition"
-        Me.mn_promition.Size = New System.Drawing.Size(120, 100)
+        Me.mn_promition.Size = New System.Drawing.Size(120, 120)
         Me.mn_promition.Text = "Promotion"
         Me.mn_promition.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'ToolStripButton6
         '
+        Me.ToolStripButton6.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
         Me.ToolStripButton6.AutoSize = False
-        Me.ToolStripButton6.Font = New System.Drawing.Font("Impact", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripButton6.Font = New System.Drawing.Font("Impact", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripButton6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ToolStripButton6.Image = CType(resources.GetObject("ToolStripButton6.Image"), System.Drawing.Image)
         Me.ToolStripButton6.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
@@ -140,6 +142,7 @@ Partial Class starbungs_main
         '
         'lbl_Username
         '
+        Me.lbl_Username.BackColor = System.Drawing.Color.White
         Me.lbl_Username.Font = New System.Drawing.Font("Impact", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_Username.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lbl_Username.Name = "lbl_Username"
@@ -148,12 +151,14 @@ Partial Class starbungs_main
         '
         'ToolStripStatusLabel3
         '
+        Me.ToolStripStatusLabel3.BackColor = System.Drawing.Color.White
         Me.ToolStripStatusLabel3.Name = "ToolStripStatusLabel3"
         Me.ToolStripStatusLabel3.Size = New System.Drawing.Size(49, 21)
         Me.ToolStripStatusLabel3.Text = "Name"
         '
         'lbl_Name
         '
+        Me.lbl_Name.BackColor = System.Drawing.Color.White
         Me.lbl_Name.Font = New System.Drawing.Font("Impact", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_Name.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lbl_Name.Name = "lbl_Name"
@@ -162,12 +167,14 @@ Partial Class starbungs_main
         '
         'ToolStripStatusLabel2
         '
+        Me.ToolStripStatusLabel2.BackColor = System.Drawing.Color.White
         Me.ToolStripStatusLabel2.Name = "ToolStripStatusLabel2"
         Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(49, 21)
         Me.ToolStripStatusLabel2.Text = "Email:"
         '
         'lbl_Email
         '
+        Me.lbl_Email.BackColor = System.Drawing.Color.White
         Me.lbl_Email.Font = New System.Drawing.Font("Impact", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_Email.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lbl_Email.Name = "lbl_Email"
@@ -176,12 +183,14 @@ Partial Class starbungs_main
         '
         'Level
         '
+        Me.Level.BackColor = System.Drawing.Color.White
         Me.Level.Name = "Level"
         Me.Level.Size = New System.Drawing.Size(46, 21)
         Me.Level.Text = "Level:"
         '
         'lbl_Level
         '
+        Me.lbl_Level.BackColor = System.Drawing.Color.White
         Me.lbl_Level.Font = New System.Drawing.Font("Impact", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_Level.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.lbl_Level.Name = "lbl_Level"
@@ -190,19 +199,35 @@ Partial Class starbungs_main
         '
         'StatusStrip1
         '
+        Me.StatusStrip1.BackColor = System.Drawing.Color.White
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.lbl_Username, Me.ToolStripStatusLabel3, Me.lbl_Name, Me.ToolStripStatusLabel2, Me.lbl_Email, Me.Level, Me.lbl_Level})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 423)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(800, 27)
+        Me.StatusStrip1.Size = New System.Drawing.Size(873, 27)
         Me.StatusStrip1.TabIndex = 3
         Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'statistics
+        '
+        Me.statistics.AutoSize = False
+        Me.statistics.Font = New System.Drawing.Font("Impact", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.statistics.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.statistics.Image = CType(resources.GetObject("statistics.Image"), System.Drawing.Image)
+        Me.statistics.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.statistics.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.statistics.Name = "statistics"
+        Me.statistics.Size = New System.Drawing.Size(120, 120)
+        Me.statistics.Text = "Statistics"
+        Me.statistics.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'starbungs_main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackColor = System.Drawing.Color.DarkOliveGreen
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.ClientSize = New System.Drawing.Size(873, 450)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.IsMdiContainer = True
@@ -233,4 +258,5 @@ Partial Class starbungs_main
     Friend WithEvents lbl_Level As ToolStripStatusLabel
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents mn_staffs As ToolStripButton
+    Friend WithEvents statistics As ToolStripButton
 End Class

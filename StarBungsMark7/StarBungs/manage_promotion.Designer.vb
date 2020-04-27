@@ -193,9 +193,11 @@ Partial Class manage_promotion
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Impact", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label8.Location = New System.Drawing.Point(282, 32)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(39, 17)
+        Me.Label8.Size = New System.Drawing.Size(45, 21)
         Me.Label8.TabIndex = 4
         Me.Label8.Text = "Time"
         '
@@ -211,9 +213,11 @@ Partial Class manage_promotion
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Impact", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label5.Location = New System.Drawing.Point(31, 32)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(33, 17)
+        Me.Label5.Size = New System.Drawing.Size(37, 21)
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "Add"
         '
@@ -348,12 +352,13 @@ Partial Class manage_promotion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(810, 379)
         Me.Controls.Add(Me.TabControl2)
         Me.Controls.Add(Me.TabControl1)
         Me.Name = "manage_promotion"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Manage Code Discount"
+        Me.Text = "Manage Coupon"
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()

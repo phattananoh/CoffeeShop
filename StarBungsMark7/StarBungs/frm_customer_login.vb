@@ -14,8 +14,9 @@ Public Class frm_customer_login
         Dim tel As String = txt_show_tel.Text
         Dim username As String = txt_show_username.Text
         Dim password As String = txt_show_password.Text
+        Dim point As String = "0"
 
-        sql = "insert into customer (username, password, name, nickname, born, address, tel) values(@username, @password, @name, @nickname, @born, @address, @tel)"
+        sql = "insert into customer (username, password, name, nickname, born, address, tel,point) values(@username, @password, @name, @nickname, @born, @address, @tel,@point)"
         cmd = New SqlCommand(sql, cn)
         cmd.Parameters.Clear()
         cmd.Parameters.AddWithValue("username", username)
@@ -25,6 +26,7 @@ Public Class frm_customer_login
         cmd.Parameters.AddWithValue("born", born)
         cmd.Parameters.AddWithValue("address", address)
         cmd.Parameters.AddWithValue("tel", tel)
+        cmd.Parameters.AddWithValue("point", point)
 
 
         If cmd.ExecuteNonQuery() >= 1 Then

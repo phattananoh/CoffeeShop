@@ -87,17 +87,19 @@ Partial Class frm_customer_login
         '
         'txt_username1
         '
-        Me.txt_username1.Location = New System.Drawing.Point(133, 255)
+        Me.txt_username1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.txt_username1.Location = New System.Drawing.Point(121, 255)
         Me.txt_username1.Name = "txt_username1"
-        Me.txt_username1.Size = New System.Drawing.Size(127, 22)
+        Me.txt_username1.Size = New System.Drawing.Size(139, 30)
         Me.txt_username1.TabIndex = 5
         '
         'txt_password1
         '
-        Me.txt_password1.Location = New System.Drawing.Point(133, 290)
+        Me.txt_password1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.txt_password1.Location = New System.Drawing.Point(121, 290)
         Me.txt_password1.Name = "txt_password1"
         Me.txt_password1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(35)
-        Me.txt_password1.Size = New System.Drawing.Size(127, 22)
+        Me.txt_password1.Size = New System.Drawing.Size(139, 30)
         Me.txt_password1.TabIndex = 6
         '
         'btn_login
@@ -279,7 +281,7 @@ Partial Class frm_customer_login
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frm_customer_login"
-        Me.Text = "สำหรับลูกค้า"
+        Me.Text = "Customer"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
