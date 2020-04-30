@@ -22,13 +22,13 @@ Partial Class frm_history
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.datagrid_history = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Hstory = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
         CType(Me.datagrid_history, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -40,14 +40,14 @@ Partial Class frm_history
         Me.datagrid_history.AllowUserToDeleteRows = False
         Me.datagrid_history.BackgroundColor = System.Drawing.Color.DarkOliveGreen
         Me.datagrid_history.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Impact", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.datagrid_history.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Impact", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.datagrid_history.DefaultCellStyle = DataGridViewCellStyle1
         Me.datagrid_history.Location = New System.Drawing.Point(26, 166)
         Me.datagrid_history.Name = "datagrid_history"
         Me.datagrid_history.ReadOnly = True
@@ -58,17 +58,17 @@ Partial Class frm_history
         Me.datagrid_history.Size = New System.Drawing.Size(438, 366)
         Me.datagrid_history.TabIndex = 5
         '
-        'Label1
+        'Hstory
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Font = New System.Drawing.Font("Impact", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(21, 134)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(93, 29)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Statistic"
+        Me.Hstory.AutoSize = True
+        Me.Hstory.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Hstory.Font = New System.Drawing.Font("Impact", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Hstory.ForeColor = System.Drawing.Color.White
+        Me.Hstory.Location = New System.Drawing.Point(21, 134)
+        Me.Hstory.Name = "Hstory"
+        Me.Hstory.Size = New System.Drawing.Size(82, 29)
+        Me.Hstory.TabIndex = 4
+        Me.Hstory.Text = "History"
         '
         'LinkLabel1
         '
@@ -96,18 +96,6 @@ Partial Class frm_history
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Select"
         '
-        'LinkLabel2
-        '
-        Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.Font = New System.Drawing.Font("Impact", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel2.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel2.Location = New System.Drawing.Point(22, 77)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(57, 29)
-        Me.LinkLabel2.TabIndex = 10
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "staff"
-        '
         'LinkLabel3
         '
         Me.LinkLabel3.AutoSize = True
@@ -119,6 +107,18 @@ Partial Class frm_history
         Me.LinkLabel3.TabIndex = 11
         Me.LinkLabel3.TabStop = True
         Me.LinkLabel3.Text = "customer"
+        '
+        'LinkLabel2
+        '
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.Font = New System.Drawing.Font("Impact", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel2.LinkColor = System.Drawing.Color.White
+        Me.LinkLabel2.Location = New System.Drawing.Point(22, 77)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(57, 29)
+        Me.LinkLabel2.TabIndex = 10
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "staff"
         '
         'LinkLabel4
         '
@@ -141,9 +141,9 @@ Partial Class frm_history
         Me.Controls.Add(Me.LinkLabel4)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.datagrid_history)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Hstory)
         Me.Name = "frm_history"
-        Me.Text = "Statistics"
+        Me.Text = "History"
         CType(Me.datagrid_history, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -153,7 +153,7 @@ Partial Class frm_history
     End Sub
 
     Friend WithEvents datagrid_history As DataGridView
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Hstory As Label
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents LinkLabel3 As LinkLabel

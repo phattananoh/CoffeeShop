@@ -5,11 +5,6 @@
 
     Public Sub load_coffee()
         connect_open()
-        'Select P.ProductName,COUNT(D.ProductID) Quantity,SUM(D.Amount) Total
-        'From products P
-        'INNER Join sale_details D ON P.ProductID = D.ProductID
-        'GROUP BY D.ProductID
-        'ORDER BY SUM(D.Amount) DESC
 
 
         sql = "select C.coffeeName Name,sum(S.coffeeAmount) Quantity,sum(S.coffeeTotal) Total from coffee C inner join sales S on C.coffeeID = S.coffeeID group by C.coffeeName ORDER BY SUM(S.coffeeAmount) DESC "

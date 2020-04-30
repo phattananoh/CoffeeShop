@@ -246,9 +246,10 @@ Partial Class frm_staffs
         '
         Me.ck_show_Staffs.AutoSize = True
         Me.ck_show_Staffs.Enabled = False
+        Me.ck_show_Staffs.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.ck_show_Staffs.Location = New System.Drawing.Point(186, 97)
         Me.ck_show_Staffs.Name = "ck_show_Staffs"
-        Me.ck_show_Staffs.Size = New System.Drawing.Size(121, 21)
+        Me.ck_show_Staffs.Size = New System.Drawing.Size(139, 24)
         Me.ck_show_Staffs.TabIndex = 4
         Me.ck_show_Staffs.Text = "Manage Staffs"
         Me.ck_show_Staffs.UseVisualStyleBackColor = True
@@ -257,9 +258,10 @@ Partial Class frm_staffs
         '
         Me.ck_show_Customer.AutoSize = True
         Me.ck_show_Customer.Enabled = False
+        Me.ck_show_Customer.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.ck_show_Customer.Location = New System.Drawing.Point(38, 124)
         Me.ck_show_Customer.Name = "ck_show_Customer"
-        Me.ck_show_Customer.Size = New System.Drawing.Size(145, 21)
+        Me.ck_show_Customer.Size = New System.Drawing.Size(168, 24)
         Me.ck_show_Customer.TabIndex = 3
         Me.ck_show_Customer.Text = "Mangae Customer"
         Me.ck_show_Customer.UseVisualStyleBackColor = True
@@ -268,9 +270,10 @@ Partial Class frm_staffs
         '
         Me.ck_show_Menu.AutoSize = True
         Me.ck_show_Menu.Enabled = False
+        Me.ck_show_Menu.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.ck_show_Menu.Location = New System.Drawing.Point(38, 97)
         Me.ck_show_Menu.Name = "ck_show_Menu"
-        Me.ck_show_Menu.Size = New System.Drawing.Size(120, 21)
+        Me.ck_show_Menu.Size = New System.Drawing.Size(136, 24)
         Me.ck_show_Menu.TabIndex = 2
         Me.ck_show_Menu.Text = "Manage Menu"
         Me.ck_show_Menu.UseVisualStyleBackColor = True
@@ -279,9 +282,10 @@ Partial Class frm_staffs
         '
         Me.ck_show_Coupon.AutoSize = True
         Me.ck_show_Coupon.Enabled = False
+        Me.ck_show_Coupon.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.ck_show_Coupon.Location = New System.Drawing.Point(186, 70)
         Me.ck_show_Coupon.Name = "ck_show_Coupon"
-        Me.ck_show_Coupon.Size = New System.Drawing.Size(134, 21)
+        Me.ck_show_Coupon.Size = New System.Drawing.Size(152, 24)
         Me.ck_show_Coupon.TabIndex = 1
         Me.ck_show_Coupon.Text = "Manage Coupon"
         Me.ck_show_Coupon.UseVisualStyleBackColor = True
@@ -290,9 +294,10 @@ Partial Class frm_staffs
         '
         Me.ck_show_Sale.AutoSize = True
         Me.ck_show_Sale.Enabled = False
+        Me.ck_show_Sale.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.ck_show_Sale.Location = New System.Drawing.Point(38, 70)
         Me.ck_show_Sale.Name = "ck_show_Sale"
-        Me.ck_show_Sale.Size = New System.Drawing.Size(58, 21)
+        Me.ck_show_Sale.Size = New System.Drawing.Size(64, 24)
         Me.ck_show_Sale.TabIndex = 0
         Me.ck_show_Sale.Text = "Sale"
         Me.ck_show_Sale.UseVisualStyleBackColor = True
@@ -484,9 +489,10 @@ Partial Class frm_staffs
         'CheckBox_staffs
         '
         Me.CheckBox_staffs.AutoSize = True
+        Me.CheckBox_staffs.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.CheckBox_staffs.Location = New System.Drawing.Point(186, 97)
         Me.CheckBox_staffs.Name = "CheckBox_staffs"
-        Me.CheckBox_staffs.Size = New System.Drawing.Size(121, 21)
+        Me.CheckBox_staffs.Size = New System.Drawing.Size(125, 22)
         Me.CheckBox_staffs.TabIndex = 4
         Me.CheckBox_staffs.Text = "Manage Staffs"
         Me.CheckBox_staffs.UseVisualStyleBackColor = True
@@ -494,9 +500,10 @@ Partial Class frm_staffs
         'CheckBox_customer
         '
         Me.CheckBox_customer.AutoSize = True
+        Me.CheckBox_customer.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.CheckBox_customer.Location = New System.Drawing.Point(38, 124)
         Me.CheckBox_customer.Name = "CheckBox_customer"
-        Me.CheckBox_customer.Size = New System.Drawing.Size(145, 21)
+        Me.CheckBox_customer.Size = New System.Drawing.Size(153, 22)
         Me.CheckBox_customer.TabIndex = 3
         Me.CheckBox_customer.Text = "Mangae Customer"
         Me.CheckBox_customer.UseVisualStyleBackColor = True
@@ -504,9 +511,10 @@ Partial Class frm_staffs
         'CheckBox_Menu
         '
         Me.CheckBox_Menu.AutoSize = True
+        Me.CheckBox_Menu.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.CheckBox_Menu.Location = New System.Drawing.Point(38, 97)
         Me.CheckBox_Menu.Name = "CheckBox_Menu"
-        Me.CheckBox_Menu.Size = New System.Drawing.Size(120, 21)
+        Me.CheckBox_Menu.Size = New System.Drawing.Size(124, 22)
         Me.CheckBox_Menu.TabIndex = 2
         Me.CheckBox_Menu.Text = "Manage Menu"
         Me.CheckBox_Menu.UseVisualStyleBackColor = True
@@ -514,9 +522,10 @@ Partial Class frm_staffs
         'CheckBox_promotion
         '
         Me.CheckBox_promotion.AutoSize = True
+        Me.CheckBox_promotion.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.CheckBox_promotion.Location = New System.Drawing.Point(186, 70)
         Me.CheckBox_promotion.Name = "CheckBox_promotion"
-        Me.CheckBox_promotion.Size = New System.Drawing.Size(134, 21)
+        Me.CheckBox_promotion.Size = New System.Drawing.Size(140, 22)
         Me.CheckBox_promotion.TabIndex = 1
         Me.CheckBox_promotion.Text = "Manage Coupon"
         Me.CheckBox_promotion.UseVisualStyleBackColor = True
@@ -524,9 +533,10 @@ Partial Class frm_staffs
         'CheckBox_sale
         '
         Me.CheckBox_sale.AutoSize = True
+        Me.CheckBox_sale.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.CheckBox_sale.Location = New System.Drawing.Point(38, 70)
         Me.CheckBox_sale.Name = "CheckBox_sale"
-        Me.CheckBox_sale.Size = New System.Drawing.Size(58, 21)
+        Me.CheckBox_sale.Size = New System.Drawing.Size(59, 22)
         Me.CheckBox_sale.TabIndex = 0
         Me.CheckBox_sale.Text = "Sale"
         Me.CheckBox_sale.UseVisualStyleBackColor = True

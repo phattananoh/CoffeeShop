@@ -29,6 +29,7 @@ Partial Class starbungs_main
         Me.mn_customers = New System.Windows.Forms.ToolStripButton()
         Me.mn_staffs = New System.Windows.Forms.ToolStripButton()
         Me.mn_promition = New System.Windows.Forms.ToolStripButton()
+        Me.statistics = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton6 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.lbl_Username = New System.Windows.Forms.ToolStripStatusLabel()
@@ -39,7 +40,6 @@ Partial Class starbungs_main
         Me.Level = New System.Windows.Forms.ToolStripStatusLabel()
         Me.lbl_Level = New System.Windows.Forms.ToolStripStatusLabel()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
-        Me.statistics = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -119,6 +119,19 @@ Partial Class starbungs_main
         Me.mn_promition.Size = New System.Drawing.Size(120, 120)
         Me.mn_promition.Text = "Promotion"
         Me.mn_promition.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
+        'statistics
+        '
+        Me.statistics.AutoSize = False
+        Me.statistics.Font = New System.Drawing.Font("Impact", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.statistics.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.statistics.Image = CType(resources.GetObject("statistics.Image"), System.Drawing.Image)
+        Me.statistics.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.statistics.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.statistics.Name = "statistics"
+        Me.statistics.Size = New System.Drawing.Size(120, 120)
+        Me.statistics.Text = "Stat"
+        Me.statistics.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'ToolStripButton6
         '
@@ -207,19 +220,6 @@ Partial Class starbungs_main
         Me.StatusStrip1.Size = New System.Drawing.Size(873, 27)
         Me.StatusStrip1.TabIndex = 3
         Me.StatusStrip1.Text = "StatusStrip1"
-        '
-        'statistics
-        '
-        Me.statistics.AutoSize = False
-        Me.statistics.Font = New System.Drawing.Font("Impact", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.statistics.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.statistics.Image = CType(resources.GetObject("statistics.Image"), System.Drawing.Image)
-        Me.statistics.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.statistics.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.statistics.Name = "statistics"
-        Me.statistics.Size = New System.Drawing.Size(120, 120)
-        Me.statistics.Text = "Statistics"
-        Me.statistics.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'starbungs_main
         '

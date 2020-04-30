@@ -16,7 +16,7 @@ Public Class frm_select_customer
 
     Public Sub search_customer()
         connect_open()
-        sql = "select username, name from customer where username like '%" & txt_search.Text & "%' or password like '%" & txt_search.Text & "%' or name like'%" & txt_search.Text & "%' or nickname like '%" & txt_search.Text & "%' or address like '%" & txt_search.Text & "%' or tel like '%" & txt_search.Text & "%'"
+        sql = "select * from customer where username like '%" & txt_search.Text & "%' or password like '%" & txt_search.Text & "%' or name like'%" & txt_search.Text & "%' or nickname like '%" & txt_search.Text & "%' or address like '%" & txt_search.Text & "%' or tel like '%" & txt_search.Text & "%'"
         DA = New SqlClient.SqlDataAdapter(sql, cn)
         DS = New DataSet
         DA.Fill(DS, "table")
@@ -56,11 +56,11 @@ Public Class frm_select_customer
 
     End Sub
 
-    Private Sub datagrid_search_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datagrid_search.CellContentClick
+    Private Sub datagrid_search_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
     End Sub
 
-    Private Sub datagrid_search_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datagrid_search.CellDoubleClick
+    Private Sub datagrid_search_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs)
         customer_select()
 
     End Sub

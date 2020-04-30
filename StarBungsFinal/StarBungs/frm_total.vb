@@ -75,7 +75,7 @@
             cmd.Parameters.AddWithValue("saleTotal", txt_total.Text)
             cmd.Parameters.AddWithValue("discount", txt_discount.Text)
             cmd.Parameters.AddWithValue("discount_condition", promotion.lbl_condition.Text)
-            cmd.Parameters.AddWithValue("sale_net", txt_total.Text)
+            cmd.Parameters.AddWithValue("sale_net", txt_total2.Text)
             cmd.Parameters.AddWithValue("customer", coffeesale.lbl_username.Text)
             cmd.Parameters.AddWithValue("staff", starbungs_main.lbl_Name.Text)
 

@@ -34,7 +34,7 @@
         Else
             msg_ok("Success")
             coffeesale.lbl_discount.Text = lbl_discount.Text
-            Me.Hide()
+
 
         End If
 
