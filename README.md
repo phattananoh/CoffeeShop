@@ -1,3 +1,4 @@
 # CoffeeShop
-Database Final! Project 
-CoffeShop Program + Sql
+Database Final Project 
+CoffeShop Program
+VB SQL 
